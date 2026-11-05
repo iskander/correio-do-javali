@@ -1,0 +1,15 @@
+{{ define "main" }}
+<section class="rubrique">
+  <h2 class="rub">NÚMEROS - NUMÉROS</h2>
+  <p class="intro">Ici, pour chaque numéro : les sources des articles, les crédits des images,
+  les solutions des jeux. Le journal, lui, circule sur papier et en famille.</p>
+  <ul class="numeros">
+  {{ range sort (where site.RegularPages "Section" "numeros") ".Params.numero" "desc" }}
+    {{ $d := index site.Data.numeros (printf "%d" .Params.numero) }}
+    <li><a href="{{ .RelPermalink }}"><span class="num">nº{{ .Params.numero }}</span>
+      <span class="mois">{{ $d.meta.mois_fr }}</span>
+      <span class="nb">{{ len $d.articles }} articles</span></a></li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

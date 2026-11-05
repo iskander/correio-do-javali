@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="Sources, solutions des jeux et envoi de textes pour le Correio do Javali, journal de famille.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="{{ "img/favicon.png" | relURL }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Cormorant+Garamond:ital@1&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;700&family=Open+Sauce+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ "css/cdj.css" | relURL }}">
+</head>
+<body>
+  <header class="mast">
+    <div class="mast-top"><span>Journal de famille</span><span>FR · PT</span></div>
+    <a class="mast-title" href="{{ "" | relURL }}">
+      <img src="{{ "img/javali.png" | relURL }}" alt="" width="72" height="72">
+      <span class="name">Correio do Javali</span>
+    </a>
+    <div class="mast-sub">{{ site.Params.sousTitre | upper }}</div>
+    <nav class="mast-nav">
+      <a href="{{ "" | relURL }}">Numéros</a>
+      <a href="{{ "envoyer/" | relURL }}">Envoyer un texte ou une photo</a>
+    </nav>
+  </header>
+  <main>{{ block "main" . }}{{ end }}</main>
+  <footer class="foot">Correio do Javali · le journal lui-même n'est pas publié en ligne · ce site ne garde aucune donnée sur ses visiteurs</footer>
+</body>
+</html>

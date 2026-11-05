@@ -1,0 +1,105 @@
+:root {
+  --encre: #111;
+  --papier: #fff;
+  --gris: #6b6b6b;
+  --filet: #111;
+  --fond-donne: #ececec;
+}
+@media (prefers-color-scheme: dark) {
+  :root { --encre: #ececec; --papier: #161616; --gris: #a0a0a0; --filet: #ececec; --fond-donne: #2c2c2c; }
+}
+* { box-sizing: border-box; }
+html { background: var(--papier); }
+body {
+  margin: 0 auto; max-width: 760px; padding: 0 16px 48px;
+  color: var(--encre); background: var(--papier);
+  font: 17px/1.55 "Noto Serif", Georgia, serif;
+}
+a { color: inherit; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+.mast { padding-top: 20px; }
+.mast-top, .bandeau {
+  display: flex; justify-content: space-between; gap: 12px;
+  font: 13px "Open Sans", sans-serif; border-bottom: 3px solid var(--filet); padding-bottom: 3px;
+}
+.mast-title { display: flex; align-items: center; gap: 12px; text-decoration: none; padding: 6px 0 2px; }
+.mast-title img { flex: none; }
+@media (prefers-color-scheme: dark) { .mast-title img { filter: invert(1); } }
+.name { font: 700 clamp(30px, 7vw, 52px)/1 "Libre Baskerville", serif; letter-spacing: -0.03em; }
+.mast-sub {
+  border-top: 3px solid var(--filet); border-bottom: 2px solid var(--filet);
+  text-align: center; font: italic 19px "Cormorant Garamond", serif; padding: 2px 0;
+}
+.mast-nav { display: flex; flex-wrap: wrap; gap: 6px 22px; padding: 10px 0 0; font: 15px "Open Sans", sans-serif; }
+
+.bandeau { margin-top: 28px; }
+.rub {
+  font: 400 clamp(19px, 4.4vw, 25px) "Open Sauce One", "Open Sans", sans-serif;
+  text-align: center; margin: 28px 0 14px; padding-bottom: 4px; border-bottom: 2px solid var(--filet);
+}
+.bandeau + .rubrique .rub { margin-top: 6px; }
+.sous-rub { font: 700 13px "Open Sans", sans-serif; letter-spacing: .04em; color: var(--gris); margin: 26px 0 6px; }
+.intro { margin: 0 0 16px; }
+
+.numeros { list-style: none; padding: 0; margin: 0; }
+.numeros a {
+  display: grid; grid-template-columns: 4.5em 1fr auto; gap: 12px; align-items: baseline;
+  padding: 11px 2px; border-bottom: 1px solid color-mix(in srgb, var(--encre) 25%, transparent); text-decoration: none;
+}
+.numeros .num { font-weight: 700; font-style: italic; }
+.numeros .nb { color: var(--gris); font-size: 14px; }
+
+.src { margin: 0 0 14px; }
+.src h4 { font: italic 700 17px "Noto Serif", serif; margin: 0 0 2px; }
+.src ul { margin: 0; padding-left: 1.1em; font-size: 15px; overflow-wrap: anywhere; }
+.vide, .credits { margin: 0; font-size: 14px; color: var(--gris); }
+
+.jeux details { border-bottom: 1px solid color-mix(in srgb, var(--encre) 25%, transparent); padding: 8px 0; }
+.jeux summary { cursor: pointer; font: italic 700 17px "Noto Serif", serif; }
+.grille { border-collapse: collapse; margin: 12px 0; font: 15px "Open Sans", sans-serif; }
+.grille td { width: 2em; height: 2em; text-align: center; border: 1px solid var(--gris); }
+.grille td.donne { background: var(--fond-donne); font-weight: 700; }
+.sudoku tr:nth-child(3n) td { border-bottom: 2px solid var(--encre); }
+.sudoku td:nth-child(3n) { border-right: 2px solid var(--encre); }
+.sudoku { border: 2px solid var(--encre); }
+@media (max-width: 420px) { .grille td { width: 1.75em; height: 1.75em; font-size: 13px; } }
+.echiquier { width: min(320px, 100%); height: auto; display: block; margin: 10px 0; background: #fff; }
+.sol { font-weight: 700; }
+.attente { font-weight: 400; font-style: italic; }
+.toki { font-style: italic; }
+
+.envoi { display: grid; gap: 14px; }
+.envoi label { display: grid; gap: 4px; font: 700 15px "Open Sans", sans-serif; }
+.opt { font-weight: 400; color: var(--gris); }
+.envoi input, .envoi select, .envoi textarea {
+  font: 16px "Noto Serif", serif; color: var(--encre); background: var(--papier);
+  border: 1px solid var(--gris); padding: 8px; width: 100%;
+}
+.envoi textarea { resize: vertical; }
+.envoi button {
+  justify-self: start; font: 700 16px "Open Sans", sans-serif; padding: 10px 18px;
+  background: var(--encre); color: var(--papier); border: 0; cursor: pointer;
+}
+.envoi button:disabled { opacity: .5; cursor: wait; }
+.pot { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+#etat { margin: 0; min-height: 1.5em; }
+
+.foot { margin-top: 48px; padding-top: 8px; border-top: 2px solid var(--filet); font: 13px "Open Sans", sans-serif; color: var(--gris); }
+
+.ia { white-space: nowrap; font-style: normal; font-weight: 400; font-size: 15px; margin-left: 4px; }
+.ia span { display: inline-block; margin-right: 1px; }
+.ia-h { filter: grayscale(1); opacity: .35; }
+.ia-m { filter: grayscale(.5); opacity: .7; }
+.ia-i { filter: none; }
+.ia-aide { font: 700 12px "Open Sans", sans-serif; text-decoration: none; border: 1px solid var(--gris);
+  border-radius: 50%; display: inline-block; width: 1.4em; height: 1.4em; text-align: center; line-height: 1.3em; color: var(--gris); }
+.ia-table { border-collapse: collapse; width: 100%; font-size: 15px; margin: 8px 0 14px; }
+.ia-table th, .ia-table td { text-align: left; padding: 6px 8px; border-bottom: 1px solid color-mix(in srgb, var(--encre) 20%, transparent); }
+.ia-table td:first-child { white-space: nowrap; }
+@media (max-width: 520px) { .ia-table th:nth-child(3), .ia-table td:nth-child(3) { display: none; } }
+.ia-form { border: 1px solid var(--gris); padding: 8px 10px; }
+.ia-form summary { cursor: pointer; font: 700 15px "Open Sans", sans-serif; }
+.ia-grille { display: grid; grid-template-columns: 1fr repeat(4, auto); gap: 4px 10px; align-items: center; font: 14px "Open Sans", sans-serif; margin-top: 8px; }
+.ia-grille .tete { font-weight: 700; color: var(--gris); font-size: 12px; }
+.ia-grille input { width: auto; }

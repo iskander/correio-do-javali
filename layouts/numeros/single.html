@@ -1,0 +1,66 @@
+{{ define "main" }}
+{{ $n := .Params.numero }}
+{{ $d := index site.Data.numeros (printf "%d" $n) }}
+{{ $suivant := index site.Data.numeros (printf "%d" (add $n 1)) }}
+{{ $rubs := dict "actualites" "ATUALIDADE - ACTUALITÉS" "sciences" "CIÊNCIAS - SCIENCES" "culture" "CULTURA - CULTURE" "ecriture" "ESCRITA - ÉCRITURE" "chroniques" "CRÓNICAS - CHRONIQUES" "visites" "VISITAS - VISITES" }}
+
+<div class="bandeau"><span>{{ $d.meta.mois_pt }}</span><span>nº{{ $n }} - {{ $d.meta.mois_fr }}</span></div>
+
+<section class="rubrique">
+  <h2 class="rub">FONTES - SOURCES</h2>
+  {{ $cur := "" }}
+  {{ range $d.articles }}
+    {{ if ne .rubrique $cur }}{{ $cur = .rubrique }}<h3 class="sous-rub">{{ index $rubs .rubrique }}</h3>{{ end }}
+    <article class="src">
+      <h4>{{ .titre }} {{ partial "ia.html" .ia }}</h4>
+      {{ with .sources }}
+        <ul>{{ range . }}<li><a href="{{ . }}" rel="noopener nofollow">{{ replaceRE "^https?://(www\\.)?" "" . | truncate 80 }}</a></li>{{ end }}</ul>
+      {{ else }}<p class="vide">Texte original, sans source extérieure.</p>{{ end }}
+      {{ with .images }}
+        <p class="credits">Images :
+        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}<a href="{{ . }}" rel="noopener nofollow">source</a>{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
+      {{ end }}
+    </article>
+  {{ end }}
+</section>
+
+{{ with $d.jeux }}
+<section class="rubrique">
+  <h2 class="rub">JOGOS - JEUX : SOLUÇÕES - SOLUTIONS</h2>
+  <div class="jeux">
+  {{ with .sudoku }}
+    <details><summary>Sudoku</summary>
+      <table class="grille sudoku">
+      {{ $g := .grille }}
+      {{ range $r, $ligne := .solution }}<tr>{{ range $c, $v := $ligne }}
+        <td class="{{ if ne (index (index $g $r) $c) 0 }}donne{{ end }}">{{ $v }}</td>{{ end }}</tr>{{ end }}
+      </table></details>
+  {{ end }}
+  {{ with .takuzu }}
+    <details><summary>Takuzu</summary>
+      <table class="grille takuzu">
+      {{ $g := .grille }}
+      {{ range $r, $ligne := .solution }}<tr>{{ range $c, $v := $ligne }}
+        <td class="{{ if ne (index (index $g $r) $c) -1 }}donne{{ end }}">{{ $v }}</td>{{ end }}</tr>{{ end }}
+      </table></details>
+  {{ end }}
+  {{ with .echecs }}
+    <details><summary>Échecs — {{ .consigne }}</summary>
+      {{ if fileExists (printf "static/echecs/n%d.svg" $n) }}<img class="echiquier" src="{{ printf "echecs/n%d.svg" $n | relURL }}" alt="Position du problème d'échecs">{{ end }}
+      {{ if $suivant }}<p class="sol">{{ .solution }}</p>
+      {{ else }}<p class="sol attente">La solution paraîtra dans le prochain numéro. À vous de chercher !</p>{{ end }}
+    </details>
+  {{ end }}
+  {{ with .devinettes }}
+    <details><summary>Devinettes</summary><ol>
+      {{ range . }}<li>{{ .q }} <strong>{{ .r }}</strong></li>{{ end }}</ol></details>
+  {{ end }}
+  {{ with .toki }}{{ with .fr }}
+    <details><summary>Toki pona</summary>
+      {{ with $d.jeux.toki.tp }}<p class="toki">{{ . }}</p>{{ end }}
+      <p>{{ . }}</p></details>
+  {{ end }}{{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

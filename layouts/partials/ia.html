@@ -1,0 +1,4 @@
+{{/* Contribution de l'IA : émojis, couleur pleine = IA, gris = humain */}}
+{{ $e := dict "I" (slice "⚡" "Inspiration" "Inspiração") "P" (slice "🔎" "Recherche" "Pesquisa") "A" (slice "📊" "Analyse" "Análise") "V" (slice "✅" "Vérification" "Verificação") "E" (slice "✍️" "Écriture" "Escrita") "D" (slice "🎨" "Dessin, illustration" "Desenho, ilustração") "R" (slice "👓" "Révision, édition" "Revisão, edição") "O" (slice "🔤" "Orthographe" "Ortografia") "T" (slice "🌐" "Traduction" "Tradução") }}
+{{ $niv := dict "h" "100 % humain" "m" "moitié humain, moitié IA" "i" "100 % IA" }}
+{{ with . }}<span class="ia" aria-label="Contribution de l'IA">{{ range . }}{{ $x := index $e .l }}<span class="ia-{{ .n }}" title="{{ index $x 1 }} · {{ index $x 2 }} : {{ index $niv .n }}">{{ index $x 0 }}</span>{{ end }} <a class="ia-aide" href="{{ "ia/" | relURL }}" title="Qui a fait quoi ?">?</a></span>{{ end }}

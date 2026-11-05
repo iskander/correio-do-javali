@@ -1,0 +1,49 @@
+{{ define "main" }}
+<section class="rubrique">
+  <h2 class="rub">CORREIO - ENVOYER</h2>
+  <p class="intro">Un texte, un dessin, des photos, une idée de jeu ? Envoie-les ici pour le prochain numéro.
+  Tout arrive dans un dossier privé de la rédaction : rien n'est publié sur ce site.</p>
+
+  <form id="envoi" class="envoi" novalidate>
+    <label>Ton prénom ou ton pseudo <span class="opt">(facultatif)</span>
+      <input name="auteur" maxlength="60" autocomplete="nickname"></label>
+    <label>Pour la rubrique <span class="opt">(facultatif)</span>
+      <select name="rubrique">
+        <option value="">— je ne sais pas —</option>
+        <option>Actualités</option><option>Sciences</option><option>Culture</option>
+        <option>Écriture</option><option>Chroniques</option><option>Visites</option><option>Jeux</option>
+        <option>Courrier des lecteurs</option>
+      </select></label>
+    <label>Titre <span class="opt">(facultatif)</span>
+      <input name="titre" maxlength="140"></label>
+    <label>Ton texte <span class="opt">(ou colle-le ici)</span>
+      <textarea name="texte" rows="12" maxlength="40000"></textarea></label>
+    <label>Photos ou dessins <span class="opt">(jusqu'à 15, elles sont réduites automatiquement)</span>
+      <input type="file" name="fichiers" accept="image/*,.txt,.docx,.pdf" multiple></label>
+    <details class="ia-form">
+      <summary>As-tu utilisé une IA (ChatGPT, Gemini…) ? <span class="opt">(facultatif)</span></summary>
+      <p class="opt">Pour chaque étape, coche qui l'a faite. Ça s'affichera en petites pastilles à la fin de ton texte.</p>
+      <div class="ia-grille">
+        <span></span><span class="tete">pas fait</span><span class="tete">moi</span><span class="tete">moitié</span><span class="tete">IA</span>
+        <span>⚡ Idée</span><input type="radio" name="ia_I" value="" aria-label="⚡ Idée : pas fait" checked><input type="radio" name="ia_I" value="h" aria-label="⚡ Idée : moi"><input type="radio" name="ia_I" value="m" aria-label="⚡ Idée : moitié"><input type="radio" name="ia_I" value="i" aria-label="⚡ Idée : IA">
+        <span>🔎 Recherche</span><input type="radio" name="ia_P" value="" aria-label="🔎 Recherche : pas fait" checked><input type="radio" name="ia_P" value="h" aria-label="🔎 Recherche : moi"><input type="radio" name="ia_P" value="m" aria-label="🔎 Recherche : moitié"><input type="radio" name="ia_P" value="i" aria-label="🔎 Recherche : IA">
+        <span>📊 Analyse</span><input type="radio" name="ia_A" value="" aria-label="📊 Analyse : pas fait" checked><input type="radio" name="ia_A" value="h" aria-label="📊 Analyse : moi"><input type="radio" name="ia_A" value="m" aria-label="📊 Analyse : moitié"><input type="radio" name="ia_A" value="i" aria-label="📊 Analyse : IA">
+        <span>✅ Vérification</span><input type="radio" name="ia_V" value="" aria-label="✅ Vérification : pas fait" checked><input type="radio" name="ia_V" value="h" aria-label="✅ Vérification : moi"><input type="radio" name="ia_V" value="m" aria-label="✅ Vérification : moitié"><input type="radio" name="ia_V" value="i" aria-label="✅ Vérification : IA">
+        <span>✍️ Écriture</span><input type="radio" name="ia_E" value="" aria-label="✍️ Écriture : pas fait" checked><input type="radio" name="ia_E" value="h" aria-label="✍️ Écriture : moi"><input type="radio" name="ia_E" value="m" aria-label="✍️ Écriture : moitié"><input type="radio" name="ia_E" value="i" aria-label="✍️ Écriture : IA">
+        <span>🎨 Dessin, image</span><input type="radio" name="ia_D" value="" aria-label="🎨 Dessin, image : pas fait" checked><input type="radio" name="ia_D" value="h" aria-label="🎨 Dessin, image : moi"><input type="radio" name="ia_D" value="m" aria-label="🎨 Dessin, image : moitié"><input type="radio" name="ia_D" value="i" aria-label="🎨 Dessin, image : IA">
+        <span>👓 Révision</span><input type="radio" name="ia_R" value="" aria-label="👓 Révision : pas fait" checked><input type="radio" name="ia_R" value="h" aria-label="👓 Révision : moi"><input type="radio" name="ia_R" value="m" aria-label="👓 Révision : moitié"><input type="radio" name="ia_R" value="i" aria-label="👓 Révision : IA">
+        <span>🔤 Orthographe</span><input type="radio" name="ia_O" value="" aria-label="🔤 Orthographe : pas fait" checked><input type="radio" name="ia_O" value="h" aria-label="🔤 Orthographe : moi"><input type="radio" name="ia_O" value="m" aria-label="🔤 Orthographe : moitié"><input type="radio" name="ia_O" value="i" aria-label="🔤 Orthographe : IA">
+        <span>🌐 Traduction</span><input type="radio" name="ia_T" value="" aria-label="🌐 Traduction : pas fait" checked><input type="radio" name="ia_T" value="h" aria-label="🌐 Traduction : moi"><input type="radio" name="ia_T" value="m" aria-label="🌐 Traduction : moitié"><input type="radio" name="ia_T" value="i" aria-label="🌐 Traduction : IA">
+      </div>
+    </details>
+    <label>Mot du mois <span class="opt">(il est imprimé dans le journal, page Jeux)</span>
+      <input name="mot" required autocomplete="off"></label>
+    <!-- piège à robots : invisible pour les humains -->
+    <label class="pot" aria-hidden="true">Ne pas remplir <input name="site_web" tabindex="-1" autocomplete="off"></label>
+    <button type="submit">Envoyer à la rédaction</button>
+    <p id="etat" role="status"></p>
+  </form>
+</section>
+<script>window.CDJ_ENVOI = {{ site.Params.envoiURL }};</script>
+<script src="{{ "js/envoyer.js" | relURL }}"></script>
+{{ end }}
