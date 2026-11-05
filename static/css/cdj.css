@@ -103,3 +103,11 @@ a:hover { text-decoration-thickness: 2px; }
 .ia-grille { display: grid; grid-template-columns: 1fr repeat(4, auto); gap: 4px 10px; align-items: center; font: 14px "Open Sans", sans-serif; margin-top: 8px; }
 .ia-grille .tete { font-weight: 700; color: var(--gris); font-size: 12px; }
 .ia-grille input { width: auto; }
+
+.langues { display: flex; gap: 10px; }
+.langues a, .langues span { font-weight: 700; text-decoration: none; }
+.langues .actif { border-bottom: 2px solid var(--encre); }
+.langues a { color: var(--gris); }
+.langues a:hover { color: var(--encre); }
+.note { font-size: 14px; color: var(--gris); }
+.niveaux span { font-size: 18px; }

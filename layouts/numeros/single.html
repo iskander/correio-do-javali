@@ -1,24 +1,25 @@
 {{ define "main" }}
 {{ $n := .Params.numero }}
-{{ $d := index site.Data.numeros (printf "%d" $n) }}
-{{ $suivant := index site.Data.numeros (printf "%d" (add $n 1)) }}
-{{ $rubs := dict "actualites" "ATUALIDADE - ACTUALITÉS" "sciences" "CIÊNCIAS - SCIENCES" "culture" "CULTURA - CULTURE" "ecriture" "ESCRITA - ÉCRITURE" "chroniques" "CRÓNICAS - CHRONIQUES" "visites" "VISITAS - VISITES" }}
+{{ $d := index hugo.Data.numeros (printf "%d" $n) }}
+{{ $suivant := index hugo.Data.numeros (printf "%d" (add $n 1)) }}
+{{ $mois := index $d.meta (printf "mois_%s" site.Language.Lang) | default $d.meta.mois_fr }}
 
-<div class="bandeau"><span>{{ $d.meta.mois_pt }}</span><span>nº{{ $n }} - {{ $d.meta.mois_fr }}</span></div>
+<div class="bandeau"><span>{{ $d.meta.mois_pt }}</span><span>nº{{ $n }} - {{ $mois }}</span></div>
 
 <section class="rubrique">
-  <h2 class="rub">FONTES - SOURCES</h2>
+  <h2 class="rub">{{ i18n "titre_sources" }}</h2>
+  {{ with i18n "note_langue" }}<p class="intro note">{{ . }}</p>{{ end }}
   {{ $cur := "" }}
   {{ range $d.articles }}
-    {{ if ne .rubrique $cur }}{{ $cur = .rubrique }}<h3 class="sous-rub">{{ index $rubs .rubrique }}</h3>{{ end }}
-    <article class="src">
+    {{ if ne .rubrique $cur }}{{ $cur = .rubrique }}<h3 class="sous-rub">{{ i18n (printf "rub_%s" .rubrique) }}</h3>{{ end }}
+    <article class="src" lang="{{ .langue | default "fr" }}">
       <h4>{{ .titre }} {{ partial "ia.html" .ia }}</h4>
       {{ with .sources }}
         <ul>{{ range . }}<li><a href="{{ . }}" rel="noopener nofollow">{{ replaceRE "^https?://(www\\.)?" "" . | truncate 80 }}</a></li>{{ end }}</ul>
-      {{ else }}<p class="vide">Texte original, sans source extérieure.</p>{{ end }}
+      {{ else }}<p class="vide" lang="{{ site.Language.Lang }}">{{ i18n "sans_source" }}</p>{{ end }}
       {{ with .images }}
-        <p class="credits">Images :
-        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}<a href="{{ . }}" rel="noopener nofollow">source</a>{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
+        <p class="credits">{{ i18n "images" }} :
+        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}<a href="{{ . }}" rel="noopener nofollow">{{ i18n "source" }}</a>{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
       {{ end }}
     </article>
   {{ end }}
@@ -26,7 +27,7 @@
 
 {{ with $d.jeux }}
 <section class="rubrique">
-  <h2 class="rub">JOGOS - JEUX : SOLUÇÕES - SOLUTIONS</h2>
+  <h2 class="rub">{{ i18n "titre_jeux" }}</h2>
   <div class="jeux">
   {{ with .sudoku }}
     <details><summary>Sudoku</summary>
@@ -45,20 +46,20 @@
       </table></details>
   {{ end }}
   {{ with .echecs }}
-    <details><summary>Échecs — {{ .consigne }}</summary>
-      {{ if fileExists (printf "static/echecs/n%d.svg" $n) }}<img class="echiquier" src="{{ printf "echecs/n%d.svg" $n | relURL }}" alt="Position du problème d'échecs">{{ end }}
+    <details><summary>{{ i18n "echecs" }} — {{ if in .consigne "Noirs" }}{{ i18n "consigne_noirs" }}{{ else }}{{ i18n "consigne_blancs" }}{{ end }}</summary>
+      {{ if fileExists (printf "static/echecs/n%d.svg" $n) }}<img class="echiquier" src="{{ printf "echecs/n%d.svg" $n | absURL }}" alt="{{ i18n "position_echecs" }}">{{ end }}
       {{ if $suivant }}<p class="sol">{{ .solution }}</p>
-      {{ else }}<p class="sol attente">La solution paraîtra dans le prochain numéro. À vous de chercher !</p>{{ end }}
+      {{ else }}<p class="sol attente">{{ i18n "echecs_attente" }}</p>{{ end }}
     </details>
   {{ end }}
   {{ with .devinettes }}
-    <details><summary>Devinettes</summary><ol>
+    <details><summary>{{ i18n "devinettes" }}</summary><ol lang="fr">
       {{ range . }}<li>{{ .q }} <strong>{{ .r }}</strong></li>{{ end }}</ol></details>
   {{ end }}
   {{ with .toki }}{{ with .fr }}
     <details><summary>Toki pona</summary>
-      {{ with $d.jeux.toki.tp }}<p class="toki">{{ . }}</p>{{ end }}
-      <p>{{ . }}</p></details>
+      {{ with $d.jeux.toki.tp }}<p class="toki" lang="tok">{{ . }}</p>{{ end }}
+      <p lang="fr">{{ . }}</p></details>
   {{ end }}{{ end }}
   </div>
 </section>

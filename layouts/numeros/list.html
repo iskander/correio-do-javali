@@ -1,0 +1,16 @@
+{{ define "main" }}
+<section class="rubrique">
+  <h2 class="rub">{{ i18n "titre_numeros" }}</h2>
+  <p class="intro">{{ i18n "intro_numeros" }}</p>
+  {{ $pages := where site.RegularPages "Section" "numeros" }}
+  {{ if not $pages }}<p class="vide">{{ i18n "aucun_numero" }}</p>{{ end }}
+  <ul class="numeros">
+  {{ range sort $pages ".Params.numero" "desc" }}
+    {{ $d := index hugo.Data.numeros (printf "%d" .Params.numero) }}
+    <li><a href="{{ .RelPermalink }}"><span class="num">nº{{ .Params.numero }}</span>
+      <span class="mois">{{ index $d.meta (printf "mois_%s" site.Language.Lang) | default $d.meta.mois_fr }}</span>
+      <span class="nb">{{ len $d.articles }} {{ i18n "articles" }}</span></a></li>
+  {{ end }}
+  </ul>
+</section>
+{{ end }}

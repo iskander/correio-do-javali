@@ -1,10 +1,23 @@
 baseURL = "https://iskander.github.io/correio-do-javali/"
-languageCode = "fr-BE"
 title = "Correio do Javali"
 disableKinds = ["taxonomy", "term", "RSS"]
+defaultContentLanguage = "fr"
+defaultContentLanguageInSubdir = false
+
+[languages.fr]
+  locale = "fr-BE"
+  label = "FR"
+  weight = 1
+[languages.pt]
+  locale = "pt-PT"
+  label = "PT"
+  weight = 2
+[languages.en]
+  locale = "en"
+  label = "EN"
+  weight = 3
 
 [params]
-  sousTitre = "Le journal du sanglier curieux"
   # URL de l'application Google Apps Script (compte correiojavali) qui reçoit les envois
   envoiURL = "https://script.google.com/macros/s/AKfycbxeveqVDlipW8DRbXSUpnKIkeQ4GWJNGcqyVmtN4gBtni7A_zG2xfF4kDox2kmBoQT-Wg/exec"
 
