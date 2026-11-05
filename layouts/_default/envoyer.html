@@ -50,6 +50,6 @@
 {{ $t := dict }}
 {{ range slice "env_legende" "js_mot_manque" "js_vide" "js_trop_fichiers" "js_preparation" "js_envoi" "js_merci" "js_trop_lourd" "js_service" "js_non_configure" "js_injoignable" "js_echec" "js_mot_faux" "js_limite" }}{{ $t = merge $t (dict . (i18n .)) }}{{ end }}
 <script>window.CDJ_ENVOI = {{ site.Params.envoiURL }}; window.CDJ_T = {{ $t | jsonify | safeJS }}; window.CDJ_LANGUE = {{ site.Language.Lang }};</script>
-<script src="{{ "js/editeur.js" | absURL }}"></script>
-<script src="{{ "js/envoyer.js" | absURL }}"></script>
+<script src="{{ "js/editeur.js" | absURL }}?v={{ now.Unix }}"></script>
+<script src="{{ "js/envoyer.js" | absURL }}?v={{ now.Unix }}"></script>
 {{ end }}

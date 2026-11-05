@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Cormorant+Garamond:ital@1&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@400;700&family=Open+Sauce+One&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ "css/cdj.css" | absURL }}">
+  <link rel="stylesheet" href="{{ "css/cdj.css" | absURL }}?v={{ now.Unix }}">
   {{ if .IsHome }}{{ if eq site.Language.Lang "fr" }}
   <script>
     // première visite : proposer la langue du navigateur (choix mémorisé ensuite)
