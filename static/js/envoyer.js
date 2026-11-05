@@ -74,7 +74,12 @@
         headers: { "Content-Type": "text/plain;charset=utf-8" },   // évite la requête préalable CORS
         body: JSON.stringify(corps),
       });
-      const res = await rep.json();
+      let res;
+      try {
+        res = await rep.json();
+      } catch (e) {
+        throw new Error("service");      // réponse non JSON : page de connexion Google, mauvais déploiement
+      }
       if (res.ok) {
         form.reset();
         etat.textContent = "Merci ! C'est bien arrivé à la rédaction.";
@@ -84,7 +89,12 @@
     } catch (e) {
       etat.textContent = e.message === "trop lourd"
         ? "Les fichiers sont trop lourds : envoie-les en plusieurs fois."
-        : "L'envoi a échoué. Réessaie plus tard.";
+        : e.message === "service"
+          ? "Le service d'envoi ne répond pas correctement (réglage du déploiement Google)."
+          : !window.CDJ_ENVOI || window.CDJ_ENVOI.startsWith("REMPLACER")
+            ? "L'adresse du service d'envoi n'est pas encore configurée sur le site."
+            : "Impossible de joindre le service d'envoi. Réessaie plus tard.";
+      console.error(e);
     } finally {
       bouton.disabled = false;
     }
