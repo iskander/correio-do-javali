@@ -111,3 +111,22 @@ a:hover { text-decoration-thickness: 2px; }
 .langues a:hover { color: var(--encre); }
 .note { font-size: 14px; color: var(--gris); }
 .niveaux span { font-size: 18px; }
+
+.champ { display: grid; gap: 4px; }
+.champ .lab { font: 700 15px "Open Sans", sans-serif; }
+.outils { display: flex; gap: 4px; }
+.outils button { font: 15px "Noto Serif", serif; min-width: 2.2em; padding: 4px 8px; background: var(--papier);
+  color: var(--encre); border: 1px solid var(--gris); cursor: pointer; }
+.outils button:hover { border-color: var(--encre); }
+.editeur { min-height: 14em; border: 1px solid var(--gris); padding: 8px 10px; font: 16px/1.5 "Noto Serif", serif;
+  background: var(--papier); overflow-wrap: anywhere; }
+.editeur:focus { outline: 2px solid var(--encre); outline-offset: 1px; }
+.editeur h3 { font: 700 16px "Noto Serif", serif; margin: .6em 0 .2em; }
+.editeur p, .editeur div { margin: 0 0 .4em; }
+.editeur ul, .editeur ol { margin: 0 0 .4em; padding-left: 1.4em; }
+.apercu { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
+.apercu li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; align-items: center; }
+.apercu img { width: 64px; height: 64px; object-fit: cover; border: 1px solid var(--gris); }
+.apercu .nom { font: 12px "Open Sans", sans-serif; color: var(--gris); overflow-wrap: anywhere; }
+.apercu input { font: 15px "Noto Serif", serif; width: 100%; padding: 6px; border: 1px solid var(--gris);
+  background: var(--papier); color: var(--encre); }

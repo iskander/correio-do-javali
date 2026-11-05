@@ -14,10 +14,21 @@
       </select></label>
     <label>{{ i18n "env_titre_champ" }} <span class="opt">{{ i18n "facultatif" }}</span>
       <input name="titre" maxlength="140"></label>
-    <label>{{ i18n "env_texte" }} <span class="opt">{{ i18n "env_texte_aide" }}</span>
-      <textarea name="texte" rows="12" maxlength="40000"></textarea></label>
+    <div class="champ">
+      <span class="lab" id="lab-texte">{{ i18n "env_texte" }} <span class="opt">{{ i18n "env_texte_aide" }}</span></span>
+      <div class="outils" role="toolbar" aria-label="{{ i18n "ed_outils" }}">
+        <button type="button" data-cmd="bold" title="{{ i18n "ed_gras" }}"><b>{{ i18n "ed_lettre_gras" }}</b></button>
+        <button type="button" data-cmd="italic" title="{{ i18n "ed_italique" }}"><i>I</i></button>
+        <button type="button" data-cmd="h3" title="{{ i18n "ed_intertitre" }}">T</button>
+        <button type="button" data-cmd="insertUnorderedList" title="{{ i18n "ed_liste" }}">•</button>
+        <button type="button" data-cmd="insertOrderedList" title="{{ i18n "ed_liste_num" }}">1.</button>
+      </div>
+      <div id="editeur" class="editeur" contenteditable="true" role="textbox" aria-multiline="true" aria-labelledby="lab-texte"></div>
+      <textarea name="texte" hidden></textarea>
+    </div>
     <label>{{ i18n "env_fichiers" }} <span class="opt">{{ i18n "env_fichiers_aide" }}</span>
       <input type="file" name="fichiers" accept="image/*,.txt,.docx,.pdf" multiple></label>
+    <ul id="apercu" class="apercu"></ul>
     <details class="ia-form">
       <summary>{{ i18n "env_ia" }} <span class="opt">{{ i18n "facultatif" }}</span></summary>
       <p class="opt">{{ i18n "env_ia_aide" }}</p>
@@ -37,7 +48,8 @@
   </form>
 </section>
 {{ $t := dict }}
-{{ range slice "js_mot_manque" "js_vide" "js_trop_fichiers" "js_preparation" "js_envoi" "js_merci" "js_trop_lourd" "js_service" "js_non_configure" "js_injoignable" "js_echec" "js_mot_faux" "js_limite" }}{{ $t = merge $t (dict . (i18n .)) }}{{ end }}
+{{ range slice "env_legende" "js_mot_manque" "js_vide" "js_trop_fichiers" "js_preparation" "js_envoi" "js_merci" "js_trop_lourd" "js_service" "js_non_configure" "js_injoignable" "js_echec" "js_mot_faux" "js_limite" }}{{ $t = merge $t (dict . (i18n .)) }}{{ end }}
 <script>window.CDJ_ENVOI = {{ site.Params.envoiURL }}; window.CDJ_T = {{ $t | jsonify | safeJS }}; window.CDJ_LANGUE = {{ site.Language.Lang }};</script>
+<script src="{{ "js/editeur.js" | absURL }}"></script>
 <script src="{{ "js/envoyer.js" | absURL }}"></script>
 {{ end }}

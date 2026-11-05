@@ -38,8 +38,32 @@
     }
   }
 
+  // aperçu des images choisies, avec une légende facultative pour chacune
+  const apercu = document.getElementById("apercu");
+  form.fichiers.addEventListener("change", () => {
+    apercu.innerHTML = "";
+    [...form.fichiers.files].slice(0, MAX_FICHIERS).forEach((file, k) => {
+      const li = document.createElement("li");
+      const vignette = file.type.startsWith("image/")
+        ? Object.assign(document.createElement("img"), { src: URL.createObjectURL(file), alt: "" })
+        : Object.assign(document.createElement("span"), { className: "nom", textContent: "📄" });
+      const bloc = document.createElement("div");
+      const nom = Object.assign(document.createElement("div"), { className: "nom", textContent: file.name });
+      const champ = Object.assign(document.createElement("input"), {
+        type: "text", maxLength: 200, placeholder: t("env_legende"),
+      });
+      champ.dataset.index = k;
+      champ.setAttribute("aria-label", t("env_legende") + " – " + file.name);
+      bloc.append(nom, champ);
+      li.append(vignette, bloc);
+      apercu.append(li);
+    });
+  });
+
   form.addEventListener("submit", async (ev) => {
     ev.preventDefault();
+    const ed = document.getElementById("editeur");
+    if (ed && window.CDJ_EDITEUR) form.texte.value = window.CDJ_EDITEUR.versTexte(ed);
     const f = new FormData(form);
     if (!f.get("mot").trim()) { etat.textContent = t("js_mot_manque"); return; }
     const fichiers = form.fichiers.files;
@@ -55,7 +79,8 @@
         const data = await reduire(file);
         total += data.length;
         if (total > MAX_TOTAL) throw new Error("trop lourd");
-        pieces.push({ nom: file.name, data });
+        const leg = document.querySelector(`#apercu input[data-index="${pieces.length}"]`);
+        pieces.push({ nom: file.name, data, legende: leg ? leg.value.trim().slice(0, 200) : "" });
       }
       etat.textContent = t("js_envoi");
       // contribution de l'IA -> code « I P* a … » (majuscule humain, minuscule IA, * moitié)
@@ -81,6 +106,8 @@
       }
       if (res.ok) {
         form.reset();
+        if (ed) ed.innerHTML = "";
+        apercu.innerHTML = "";
         etat.textContent = t("js_merci");
       } else if (res.code === "mot") {
         etat.textContent = t("js_mot_faux");
