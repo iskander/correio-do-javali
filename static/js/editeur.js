@@ -42,6 +42,14 @@
       }
       if (n.nodeType !== 1) return;
       const tag = n.tagName.toUpperCase();
+      // émoji collé depuis Google Docs, Word ou un courriel : une petite image dont l'alt est l'émoji
+      if (tag === "IMG") {
+        const alt = (n.getAttribute("alt") || "").trim();
+        if (alt && [...alt].length <= 8 && /\p{Extended_Pictographic}/u.test(alt)) {
+          (cur || nouveau("p")).runs.push({ t: alt, b: st.b, i: st.i });
+        }
+        return;
+      }
       if (IGNORER.has(tag)) return;
       const style = n.getAttribute("style") || "";
       if (/mso-list:\s*Ignore/i.test(style)) {                // puce ou numéro de Word
