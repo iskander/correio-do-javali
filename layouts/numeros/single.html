@@ -19,7 +19,7 @@
       {{ else }}<p class="vide" lang="{{ site.Language.Lang }}">{{ i18n "sans_source" }}</p>{{ end }}
       {{ with .images }}
         <p class="credits">{{ i18n "images" }} :
-        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}<a href="{{ . }}" rel="noopener nofollow">{{ i18n "source" }}</a>{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
+        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}{{ if hasPrefix . "http" }}<a href="{{ . }}" rel="noopener nofollow">{{ i18n "source" }}</a>{{ else }}{{ . }}{{ end }}{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
       {{ end }}
     </article>
   {{ end }}
