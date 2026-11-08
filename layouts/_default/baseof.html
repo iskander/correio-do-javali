@@ -46,8 +46,8 @@
     <div class="mast-sub">{{ i18n "sous_titre" }}</div>
     <nav class="mast-nav">
       <a href="{{ "" | relLangURL }}">{{ i18n "nav_numeros" }}</a>
-      <a href="{{ "envoyer/" | relLangURL }}">{{ i18n "nav_envoyer" }}</a>
-      <a href="{{ "ia/" | relLangURL }}">{{ i18n "nav_ia" }}</a>
+      <a href="{{ with site.GetPage "/envoyer" }}{{ .RelPermalink }}{{ end }}">{{ i18n "nav_envoyer" }}</a>
+      <a href="{{ with site.GetPage "/ia" }}{{ .RelPermalink }}{{ end }}">{{ i18n "nav_ia" }}</a>
     </nav>
   </header>
   <main>{{ block "main" . }}{{ end }}</main>

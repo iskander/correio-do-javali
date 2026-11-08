@@ -1,3 +1,3 @@
 {{/* Contribution de l'IA : émojis, couleur pleine = IA, gris = humain */}}
 {{ $emo := dict "I" "⚡" "P" "🔎" "A" "📊" "V" "✅" "E" "✍️" "D" "🎨" "R" "👓" "O" "🔤" "T" "🌐" }}
-{{ with . }}<span class="ia" aria-label="{{ i18n "ia_label" }}">{{ range . }}<span class="ia-{{ .n }}" title="{{ i18n (printf "ia_%s" .l) }} : {{ i18n (printf "ia_%s" .n) }}">{{ index $emo .l }}</span>{{ end }} <a class="ia-aide" href="{{ "ia/" | relLangURL }}" title="{{ i18n "nav_ia" }}">?</a></span>{{ end }}
+{{ with . }}<span class="ia" aria-label="{{ i18n "ia_label" }}">{{ range . }}<span class="ia-{{ .n }}" title="{{ i18n (printf "ia_%s" .l) }} : {{ i18n (printf "ia_%s" .n) }}">{{ index $emo .l }}</span>{{ end }} <a class="ia-aide" href="{{ with site.GetPage "/ia" }}{{ .RelPermalink }}{{ end }}" title="{{ i18n "nav_ia" }}">?</a></span>{{ end }}

@@ -1,7 +1,7 @@
 {{ define "main" }}
 <section class="rubrique">
   <h2 class="rub">{{ i18n "env_titre" }}</h2>
-  <p class="intro">{{ i18n "env_intro" }} {{ i18n "env_texte_langue" }}</p>
+  <p class="intro">{{ i18n "env_intro" }}</p>
 
   <form id="envoi" class="envoi" novalidate>
     <label>{{ i18n "env_auteur" }} <span class="opt">{{ i18n "facultatif" }}</span>
@@ -32,12 +32,15 @@
     <details class="ia-form">
       <summary>{{ i18n "env_ia" }} <span class="opt">{{ i18n "facultatif" }}</span></summary>
       <p class="opt">{{ i18n "env_ia_aide" }}</p>
-      <div class="ia-grille">
-        <span></span><span class="tete">{{ i18n "env_pas_fait" }}</span><span class="tete">{{ i18n "env_moi" }}</span><span class="tete">{{ i18n "env_moitie" }}</span><span class="tete">{{ i18n "env_iac" }}</span>
-        {{ range slice "I" "P" "A" "V" "E" "D" "R" "O" "T" }}{{ $lab := i18n (printf "ia_court_%s" .) }}
-        <span>{{ $lab }}</span>{{ $l := . }}{{ range slice (slice "" "env_pas_fait") (slice "h" "env_moi") (slice "m" "env_moitie") (slice "i" "env_iac") }}<input type="radio" name="ia_{{ $l }}" value="{{ index . 0 }}" aria-label="{{ $lab }} : {{ i18n (index . 1) }}"{{ if eq (index . 0) "" }} checked{{ end }}>{{ end }}
+      <table class="ia-grille">
+        <thead><tr><th></th><th>{{ i18n "env_pas_fait" }}</th><th>{{ i18n "env_moi" }}</th><th>{{ i18n "env_moitie" }}</th><th>{{ i18n "env_iac" }}</th></tr></thead>
+        <tbody>
+        {{ range slice "I" "P" "A" "V" "E" "D" "R" "O" "T" }}{{ $lab := i18n (printf "ia_court_%s" .) }}{{ $l := . }}
+        <tr><th scope="row">{{ $lab }}</th>{{ range slice (slice "" "env_pas_fait") (slice "h" "env_moi") (slice "m" "env_moitie") (slice "i" "env_iac") }}
+          <td><input type="radio" name="ia_{{ $l }}" value="{{ index . 0 }}" aria-label="{{ $lab }} : {{ i18n (index . 1) }}"{{ if eq (index . 0) "" }} checked{{ end }}></td>{{ end }}</tr>
         {{ end }}
-      </div>
+        </tbody>
+      </table>
     </details>
     <label>{{ i18n "env_mot" }} <span class="opt">{{ i18n "env_mot_aide" }}</span>
       <input name="mot" required autocomplete="off"></label>

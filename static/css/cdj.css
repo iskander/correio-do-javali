@@ -100,9 +100,15 @@ a:hover { text-decoration-thickness: 2px; }
 @media (max-width: 520px) { .ia-table th:nth-child(3), .ia-table td:nth-child(3) { display: none; } }
 .ia-form { border: 1px solid var(--gris); padding: 8px 10px; }
 .ia-form summary { cursor: pointer; font: 700 15px "Open Sans", sans-serif; }
-.ia-grille { display: grid; grid-template-columns: 1fr repeat(4, auto); gap: 4px 10px; align-items: center; font: 14px "Open Sans", sans-serif; margin-top: 8px; }
-.ia-grille .tete { font-weight: 700; color: var(--gris); font-size: 12px; }
-.ia-grille input { width: auto; }
+/* grille « aide de l'IA » : étapes et boutons rapprochés, une bande sur deux grisée */
+.ia-grille { border-collapse: collapse; width: auto; font: 14px "Open Sans", sans-serif; margin-top: 8px; }
+.ia-grille th, .ia-grille td { padding: 3px 8px; }
+.ia-grille thead th { font-weight: 700; color: var(--gris); font-size: 12px; text-align: center; vertical-align: bottom; }
+.ia-grille tbody th { font-weight: 400; text-align: left; white-space: nowrap; padding-right: 14px; }
+.ia-grille td { text-align: center; }
+.ia-grille tbody tr:nth-child(odd) { background: var(--fond-donne); }
+.ia-grille input { width: auto; margin: 0; }
+.ia-grille label, .ia-grille td { cursor: pointer; }
 
 .langues { display: flex; gap: 10px; }
 .langues a, .langues span { font-weight: 700; text-decoration: none; }

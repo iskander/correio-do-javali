@@ -16,6 +16,11 @@ defaultContentLanguageInSubdir = false
   locale = "en"
   label = "EN"
   weight = 3
+  # adresses en anglais : /en/issues/15/ (au lieu de /en/numeros/15/)
+  [languages.en.permalinks.page]
+    numeros = "/issues/:contentbasename/"
+  [languages.en.permalinks.section]
+    numeros = "/issues/"
 
 [params]
   # URL de l'application Google Apps Script (compte correiojavali) qui reçoit les envois
