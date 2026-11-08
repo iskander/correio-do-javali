@@ -38,11 +38,17 @@
     }
   }
 
-  // aperçu des images choisies, avec une légende facultative pour chacune
+  // Fichiers choisis : on les ACCUMULE. Un champ <input type=file> remplace sa sélection à
+  // chaque nouveau choix (téléphone : une photo à la fois) ; sans cette liste, seul le dernier
+  // fichier choisi partait. Chaque fichier garde sa légende et peut être retiré.
   const apercu = document.getElementById("apercu");
-  form.fichiers.addEventListener("change", () => {
+  let choisis = [];   // { file, legende }
+  const cle = (f) => [f.name, f.size, f.lastModified].join("|");
+
+  function afficher() {
     apercu.innerHTML = "";
-    [...form.fichiers.files].slice(0, MAX_FICHIERS).forEach((file, k) => {
+    choisis.forEach((c, k) => {
+      const file = c.file;
       const li = document.createElement("li");
       const vignette = file.type.startsWith("image/")
         ? Object.assign(document.createElement("img"), { src: URL.createObjectURL(file), alt: "" })
@@ -50,14 +56,30 @@
       const bloc = document.createElement("div");
       const nom = Object.assign(document.createElement("div"), { className: "nom", textContent: file.name });
       const champ = Object.assign(document.createElement("input"), {
-        type: "text", maxLength: 200, placeholder: t("env_legende"),
+        type: "text", maxLength: 200, placeholder: t("env_legende"), value: c.legende,
       });
-      champ.dataset.index = k;
       champ.setAttribute("aria-label", t("env_legende") + " – " + file.name);
+      champ.addEventListener("input", () => { c.legende = champ.value; });
       bloc.append(nom, champ);
-      li.append(vignette, bloc);
+      const retirer = Object.assign(document.createElement("button"), {
+        type: "button", className: "retirer", textContent: "✕", title: t("js_retirer"),
+      });
+      retirer.setAttribute("aria-label", t("js_retirer") + " – " + file.name);
+      retirer.addEventListener("click", () => { choisis.splice(k, 1); afficher(); });
+      li.append(vignette, bloc, retirer);
       apercu.append(li);
     });
+  }
+
+  form.fichiers.addEventListener("change", () => {
+    const deja = new Set(choisis.map((c) => cle(c.file)));
+    for (const file of form.fichiers.files) {
+      if (!deja.has(cle(file))) { choisis.push({ file, legende: "" }); deja.add(cle(file)); }
+    }
+    form.fichiers.value = "";          // permet de rechoisir et d'ajouter encore
+    if (choisis.length > MAX_FICHIERS) { choisis = choisis.slice(0, MAX_FICHIERS); etat.textContent = t("js_trop_fichiers"); }
+    else etat.textContent = "";
+    afficher();
   });
 
   form.addEventListener("submit", async (ev) => {
@@ -66,21 +88,20 @@
     if (ed && window.CDJ_EDITEUR) form.texte.value = window.CDJ_EDITEUR.versTexte(ed);
     const f = new FormData(form);
     if (!f.get("mot").trim()) { etat.textContent = t("js_mot_manque"); return; }
-    const fichiers = form.fichiers.files;
+    const fichiers = choisis;
     if (!f.get("texte").trim() && fichiers.length === 0) { etat.textContent = t("js_vide"); return; }
     if (fichiers.length > MAX_FICHIERS) { etat.textContent = t("js_trop_fichiers"); return; }
-    const bouton = form.querySelector("button");
+    const bouton = form.querySelector('button[type="submit"]');
     bouton.disabled = true;
     etat.textContent = t("js_preparation");
     try {
       const pieces = [];
       let total = 0;
-      for (const file of fichiers) {
-        const data = await reduire(file);
+      for (const c of fichiers) {
+        const data = await reduire(c.file);
         total += data.length;
         if (total > MAX_TOTAL) throw new Error("trop lourd");
-        const leg = document.querySelector(`#apercu input[data-index="${pieces.length}"]`);
-        pieces.push({ nom: file.name, data, legende: leg ? leg.value.trim().slice(0, 200) : "" });
+        pieces.push({ nom: c.file.name, data, legende: (c.legende || "").trim().slice(0, 200) });
       }
       etat.textContent = t("js_envoi");
       // contribution de l'IA -> code « I P* a … » (majuscule humain, minuscule IA, * moitié)
@@ -107,6 +128,7 @@
       if (res.ok) {
         form.reset();
         if (ed) ed.innerHTML = "";
+        choisis = [];
         apercu.innerHTML = "";
         etat.textContent = t("js_merci");
       } else if (res.code === "mot") {

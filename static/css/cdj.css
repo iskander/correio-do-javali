@@ -131,7 +131,9 @@ a:hover { text-decoration-thickness: 2px; }
 .editeur p, .editeur div { margin: 0 0 .4em; }
 .editeur ul, .editeur ol { margin: 0 0 .4em; padding-left: 1.4em; }
 .apercu { list-style: none; padding: 0; margin: 0; display: grid; gap: 8px; }
-.apercu li { display: grid; grid-template-columns: 64px 1fr; gap: 10px; align-items: center; }
+.apercu li { display: grid; grid-template-columns: 64px 1fr auto; gap: 10px; align-items: center; }
+.apercu .retirer { font: 700 15px "Open Sans", sans-serif; background: none; border: 1px solid var(--gris); color: var(--encre); width: 2em; height: 2em; cursor: pointer; }
+.apercu .retirer:hover { border-color: var(--encre); }
 .apercu img { width: 64px; height: 64px; object-fit: cover; border: 1px solid var(--gris); }
 .apercu .nom { font: 12px "Open Sans", sans-serif; color: var(--gris); overflow-wrap: anywhere; }
 .apercu input { font: 15px "Noto Serif", serif; width: 100%; padding: 6px; border: 1px solid var(--encre);
