@@ -130,3 +130,8 @@ a:hover { text-decoration-thickness: 2px; }
 .apercu .nom { font: 12px "Open Sans", sans-serif; color: var(--gris); overflow-wrap: anywhere; }
 .apercu input { font: 15px "Noto Serif", serif; width: 100%; padding: 6px; border: 1px solid var(--encre);
   background: var(--papier); color: var(--encre); }
+
+/* lien « Jouer » vers un jeu du numéro */
+.a-jouer p { margin: 4px 0; }
+.bouton { display: inline-block; border: 2px solid #000; padding: 4px 14px; text-decoration: none; color: #000; font-weight: 700; }
+.bouton:hover, .bouton:focus-visible { background: #000; color: #fff; }

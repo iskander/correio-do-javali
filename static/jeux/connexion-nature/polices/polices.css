@@ -1,0 +1,65 @@
+/* Polices Pixelify Sans et Jacquard 24 (SIL Open Font License), servies localement : aucune requête vers Google. */
+/* pixelify-sans-latin-400-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(pixelify-sans-latin-400-normal.woff2) format('woff2');
+}
+/* pixelify-sans-latin-ext-400-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(pixelify-sans-latin-ext-400-normal.woff2) format('woff2');
+}
+/* pixelify-sans-latin-500-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(pixelify-sans-latin-500-normal.woff2) format('woff2');
+}
+/* pixelify-sans-latin-ext-500-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src: url(pixelify-sans-latin-ext-500-normal.woff2) format('woff2');
+}
+/* pixelify-sans-latin-700-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(pixelify-sans-latin-700-normal.woff2) format('woff2');
+}
+/* pixelify-sans-latin-ext-700-normal */
+@font-face {
+  font-family: 'Pixelify Sans';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src: url(pixelify-sans-latin-ext-700-normal.woff2) format('woff2');
+}
+/* jacquard-24-latin-400-normal */
+@font-face {
+  font-family: 'Jacquard 24';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(jacquard-24-latin-400-normal.woff2) format('woff2');
+}
+/* jacquard-24-latin-ext-400-normal */
+@font-face {
+  font-family: 'Jacquard 24';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(jacquard-24-latin-ext-400-normal.woff2) format('woff2');
+}

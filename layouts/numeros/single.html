@@ -25,6 +25,19 @@
   {{ end }}
 </section>
 
+{{ with index (hugo.Data.a_jouer | default dict) (printf "%d" $n) }}
+<section class="rubrique">
+  <h2 class="rub">{{ i18n "titre_a_jouer" }}</h2>
+  {{ range . }}
+  <article class="src a-jouer">
+    <h4>{{ .titre }}</h4>
+    <p>{{ index . (printf "texte_%s" site.Language.Lang) | default .texte_fr }}</p>
+    <p><a class="bouton" href="{{ .url | absURL }}">{{ i18n "jouer" }} →</a></p>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
+
 {{ with $d.jeux }}
 <section class="rubrique">
   <h2 class="rub">{{ i18n "titre_jeux" }}</h2>
