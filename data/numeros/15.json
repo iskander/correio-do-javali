@@ -10,28 +10,6 @@
    "rubrique": "actualites",
    "titre": "Israël, Gaza, Cisjordanie : trois ans après, où en est-on ?",
    "langue": "fr",
-   "sources": [
-    "https://www.lemonde.fr/le-monde-des-religions/article/2026/10/11/delphine-horvilleur-rabbine-apres-le-7-octobre-il-m-a-fallu-du-temps-pour-parler-de-la-souffrance-des-palestiniens-innocents_6791269_6038514.html",
-    "https://www.lemonde.fr/afrique/article/2026/10/15/navanethem-pillay-prix-nobel-de-la-paix-sur-gaza-on-nous-a-accuses-d-antisemitisme-et-de-partialite-mais-je-sais-ce-qui-est-constitutif-du-crime-de-genocide_6794072_3212.html",
-    "https://www.lemonde.fr/international/article/2026/11/03/legislatives-en-israel-l-opposition-veut-former-un-gouvernement-sans-benyamin-netanyahou-mais-reste-divisee-sur-une-alliance-avec-les-partis-arabes_6805623_3210.html",
-    "https://www.dhnet.be/dernieres-depeches/2026/10/30/israel-le-camp-de-netanyahu-en-tete-apres-les-elections-mais-sans-majorite-GCLSI5DEIRDY5CEJWCMHUVL4KM/",
-    "https://www.blick.ch/fr/monde/guerre-la-bande-de-gaza-enregistre-plus-de-70000-morts-id21470205.html",
-    "https://fr.euronews.com/2026/05/29/netanyahou-promet-detendre-le-controle-israelien-sur-gaza-a-70",
-    "https://www.lalibre.be/international/moyen-orient/2026/03/13/washington-du-cote-disrael-face-a-la-procedure-sud-africaine-devant-la-cij-qui-accuse-jerusalem-de-genocide-TB3K7L6E65CJDLRYKSH4EVAVIE/",
-    "https://www.vrt.be/vrtnws/fr/2026/07/07/le-ministre-des-affaires-etrangeres-prevot-prepare-une-decision/",
-    "https://fr.businessam.be/?p=263539",
-    "https://www.un.org/unispal/document/israel-has-committed-genocide-in-the-gaza-strip-un-commission-finds-16sep25/",
-    "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_7_October_2026.pdf",
-    "https://www.ochaopt.org/sites/default/files/West%20Bank_info-graphic_21_October_2026_version_3.pdf",
-    "https://www.timesofisrael.com/israeli-film-alleging-ai-assisted-killing-of-gaza-civilians-wins-venice-jury-prize/",
-    "https://www.youtube.com/watch?v=JMOmlcMY-F0",
-    "https://arynews.tv/they-lie-to-us-one-year-on-gazans-dont-believe-in-ceasefire",
-    "https://cpj.org/2026/10/american-photojournalist-heidi-levine-attacked-by-israeli-settlers-in-west-bank/",
-    "https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/",
-    "https://www.france24.com/fr/moyen-orient/20261108-moyen-orient-en-direct-le-quartier-financier-de-riyad-cibl%C3%A9-apr%C3%A8s-des-frappes-au-y%C3%A9men",
-    "https://san.com/cc/israeli-police-find-no-evidence-to-support-netanyahu-partys-election-fraud-claims/",
-    "https://www.aljazeera.com/news/2026/7/18/belgium-bans-imports-from-israeli-settlements-in-occupied-palestine"
-   ],
    "ia": [
     {
      "l": "I",
@@ -58,11 +36,126 @@
      "n": "m"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.lemonde.fr/le-monde-des-religions/article/2026/10/11/delphine-horvilleur-rabbine-apres-le-7-octobre-il-m-a-fallu-du-temps-pour-parler-de-la-souffrance-des-palestiniens-innocents_6791269_6038514.html",
+     "media": "Le Monde",
+     "titre": "Delphine Horvilleur : « Il m'a fallu du temps pour parler de la souffrance des Palestiniens »",
+     "date": "2026-10-11",
+     "note": "les « présences protectrices » pendant la récolte des olives"
+    },
+    {
+     "url": "https://www.lemonde.fr/afrique/article/2026/10/15/navanethem-pillay-prix-nobel-de-la-paix-sur-gaza-on-nous-a-accuses-d-antisemitisme-et-de-partialite-mais-je-sais-ce-qui-est-constitutif-du-crime-de-genocide_6794072_3212.html",
+     "media": "Le Monde",
+     "titre": "Navanethem Pillay, prix Nobel de la paix, sur Gaza",
+     "date": "2026-10-15"
+    },
+    {
+     "url": "https://www.lemonde.fr/international/article/2026/11/03/legislatives-en-israel-l-opposition-veut-former-un-gouvernement-sans-benyamin-netanyahou-mais-reste-divisee-sur-une-alliance-avec-les-partis-arabes_6805623_3210.html",
+     "media": "Le Monde",
+     "titre": "Législatives en Israël : l'opposition veut gouverner sans Nétanyahou",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://www.dhnet.be/dernieres-depeches/2026/10/30/israel-le-camp-de-netanyahu-en-tete-apres-les-elections-mais-sans-majorite-GCLSI5DEIRDY5CEJWCMHUVL4KM/",
+     "media": "La DH",
+     "titre": "Israël : le camp de Nétanyahou en tête, mais sans majorité",
+     "date": "2026-10-30"
+    },
+    {
+     "url": "https://www.blick.ch/fr/monde/guerre-la-bande-de-gaza-enregistre-plus-de-70000-morts-id21470205.html",
+     "media": "Blick",
+     "titre": "La bande de Gaza enregistre plus de 70 000 morts"
+    },
+    {
+     "url": "https://fr.euronews.com/2026/05/29/netanyahou-promet-detendre-le-controle-israelien-sur-gaza-a-70",
+     "media": "Euronews",
+     "titre": "Nétanyahou promet d'étendre le contrôle israélien sur Gaza à 70 %",
+     "date": "2026-05-29"
+    },
+    {
+     "url": "https://www.lalibre.be/international/moyen-orient/2026/03/13/washington-du-cote-disrael-face-a-la-procedure-sud-africaine-devant-la-cij-qui-accuse-jerusalem-de-genocide-TB3K7L6E65CJDLRYKSH4EVAVIE/",
+     "media": "La Libre",
+     "titre": "Washington du côté d'Israël face à la procédure sud-africaine",
+     "date": "2026-03-13"
+    },
+    {
+     "url": "https://www.vrt.be/vrtnws/fr/2026/07/07/le-ministre-des-affaires-etrangeres-prevot-prepare-une-decision/",
+     "media": "VRT",
+     "titre": "Le ministre des Affaires étrangères Prévot prépare une décision",
+     "date": "2026-07-07"
+    },
+    {
+     "url": "https://fr.businessam.be/?p=263539",
+     "media": "Business AM"
+    },
+    {
+     "url": "https://www.un.org/unispal/document/israel-has-committed-genocide-in-the-gaza-strip-un-commission-finds-16sep25/",
+     "media": "ONU",
+     "titre": "Une commission de l'ONU conclut qu'Israël a commis un génocide à Gaza",
+     "date": "2025-09-16"
+    },
+    {
+     "url": "https://www.ochaopt.org/sites/default/files/Gaza_Reported_Impact_Snapshot_7_October_2026.pdf",
+     "media": "ONU (OCHA)",
+     "titre": "Gaza : bilan chiffré au 7 octobre 2026"
+    },
+    {
+     "url": "https://www.ochaopt.org/sites/default/files/West%20Bank_info-graphic_21_October_2026_version_3.pdf",
+     "media": "ONU (OCHA)",
+     "titre": "Cisjordanie : infographie du 21 octobre 2026"
+    },
+    {
+     "url": "https://www.timesofisrael.com/israeli-film-alleging-ai-assisted-killing-of-gaza-civilians-wins-venice-jury-prize/",
+     "media": "The Times of Israel",
+     "titre": "Un film israélien sur l'IA et les morts civils à Gaza primé"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=JMOmlcMY-F0",
+     "media": "YouTube",
+     "titre": "France Culture : le film « Naza »",
+     "date": "2026-10-13",
+     "note": "le rôle de l'IA dans le choix des cibles",
+     "video": true
+    },
+    {
+     "url": "https://arynews.tv/they-lie-to-us-one-year-on-gazans-dont-believe-in-ceasefire",
+     "media": "ARY News",
+     "titre": "Un an après, des Gazaouis ne croient pas au cessez-le-feu"
+    },
+    {
+     "url": "https://cpj.org/2026/10/american-photojournalist-heidi-levine-attacked-by-israeli-settlers-in-west-bank/",
+     "media": "CPJ",
+     "titre": "La photojournaliste Heidi Levine attaquée par des colons"
+    },
+    {
+     "url": "https://www.timesofisrael.com/as-eisenkot-wins-67-nods-to-be-pm-herzog-says-hell-announce-mandate-decision-on-sunday/",
+     "media": "The Times of Israel",
+     "titre": "Eisenkot recommandé par 67 députés pour diriger le gouvernement"
+    },
+    {
+     "url": "https://www.france24.com/fr/moyen-orient/20261108-moyen-orient-en-direct-le-quartier-financier-de-riyad-cibl%C3%A9-apr%C3%A8s-des-frappes-au-y%C3%A9men",
+     "media": "France 24",
+     "titre": "Moyen-Orient en direct (8 novembre 2026)",
+     "date": "2026-11-08"
+    },
+    {
+     "url": "https://san.com/cc/israeli-police-find-no-evidence-to-support-netanyahu-partys-election-fraud-claims/",
+     "media": "SAN",
+     "titre": "La police israélienne ne trouve pas de preuve de fraude électorale"
+    },
+    {
+     "url": "https://www.aljazeera.com/news/2026/7/18/belgium-bans-imports-from-israeli-settlements-in-occupied-palestine",
+     "media": "Al Jazeera",
+     "titre": "La Belgique interdit les importations des colonies israéliennes"
+    }
+   ],
    "images": [
     {
      "legende": "Israël et les territoires qu’il occupe, selon l’ONU",
      "source": "illustration CdJ, contours Natural Earth (domaine public)",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/01-israel-1-carte.svg"
     }
    ]
   },
@@ -70,24 +163,6 @@
    "rubrique": "actualites",
    "titre": "Liceais e universitários na rua: a revolta de uma geração",
    "langue": "pt",
-   "sources": [
-    "https://www.lemonde.fr/idees/article/2026/10/06/vincent-tiberj-politiste-la-reaction-du-gouvernement-a-la-mobilisation-lyceenne-en-dit-beaucoup-sur-la-facon-dont-une-partie-des-medias-et-des-politiques-considerent-la-jeunesse_6788833_3232.html",
-    "https://www.lemonde.fr/idees/article/2026/10/14/la-lettre-ouverte-d-une-mere-de-gilet-jaune-aux-parents-de-lyceens-mutiles-vous-n-y-etes-pour-rien-le-probleme-ne-vient-pas-de-vous-ni-de-votre-enfant_6793392_3232.html",
-    "https://www.lemonde.fr/societe/article/2026/10/18/lors-des-manifestations-du-17-octobre-les-forces-de-l-ordre-depassees-par-une-mobilisation-imprevisible-quelque-chose-a-foire-ce-n-est-pas-concevable-que-des-groupes-puissent-arriver-si-pres-de-l-elysee_6797038_3224.html",
-    "https://www.lemonde.fr/politique/article/2026/10/19/mobilisation-du-17-octobre-emmanuel-macron-tente-de-reaffirmer-son-autorite-ebranlee-par-les-violences-et-les-mouvements-sociaux_6797402_823448.html",
-    "https://www.lemonde.fr/international/article/2026/11/03/des-syndicats-et-associations-de-sept-pays-europeens-appellent-a-manifester-contre-la-vie-chere-fin-novembre_6805665_3210.html",
-    "https://www.parismatch.be/actualites/societe/2026/10/07/le-blocus-des-lyceens-francais-sexporte-en-belgique-pourquoi-nos-etudiants-du-secondaire-manifestent-ils-JRSQLVH4TNHWPADWTPONFEUSMU/",
-    "https://www.lalibre.be/belgique/enseignement/2026/05/06/du-fric-pour-lenseignement-public-700-etudiants-manifestent-a-bruxelles-contre-la-hausse-du-minerval-BMH5QTHSLZGZLGA2UHBGGU3C2Q/",
-    "https://www.rtp.pt/noticias/economia/estudantes-anunciam-protesto-em-lisboa-contra-descongelamento-das-propinas_n1770728",
-    "https://www.sabado.pt/portugal/amp/mais-de-200-estudantes-protestaram-em-coimbra-contra-aumento-de-propinas",
-    "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/discours-de-cloture-de-jean-noel-barrot-ministre-de-l-europe-et-des-affaires-etrangeres-lors-de-l",
-    "https://www.ilfoglio.it/cronaca/2026/10/20/news/crosetto-i-fatti-di-milano-sono-frutto-della-guerra-ibrida--411114",
-    "https://www.youtube.com/watch?v=4qZp-zB5MQY",
-    "https://www.dhnet.be/dernieres-depeches/2026/10/26/apres-un-mois-de-crise-lyceenne-le-gouvernement-promet-lundi-des-reponses-tres-concretes-PQCA73EZPRDMZNK4AFE36VWDAY/",
-    "https://www.parismatch.be/actualites/2026/11/03/colere-des-etudiants-en-belgique-des-organisations-saisissent-la-justice-pour-protester-contre-la-reforme-du-minerval-26LHBICXJFDW3AKMYZZOXL3I3I/",
-    "https://www.bruxelles-j.be/actus/minerval-hausse-frais-etudes-aides-etudiants/",
-    "https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/"
-   ],
    "ia": [
     {
      "l": "I",
@@ -112,6 +187,101 @@
     {
      "l": "T",
      "n": "i"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://www.lemonde.fr/idees/article/2026/10/06/vincent-tiberj-politiste-la-reaction-du-gouvernement-a-la-mobilisation-lyceenne-en-dit-beaucoup-sur-la-facon-dont-une-partie-des-medias-et-des-politiques-considerent-la-jeunesse_6788833_3232.html",
+     "media": "Le Monde",
+     "titre": "Tribune sur la réaction du gouvernement",
+     "date": "2026-10-06"
+    },
+    {
+     "url": "https://www.lemonde.fr/idees/article/2026/10/14/la-lettre-ouverte-d-une-mere-de-gilet-jaune-aux-parents-de-lyceens-mutiles-vous-n-y-etes-pour-rien-le-probleme-ne-vient-pas-de-vous-ni-de-votre-enfant_6793392_3232.html",
+     "media": "Le Monde",
+     "titre": "Tribune de Dominique Rodtchenki-Pontonnier",
+     "date": "2026-10-14"
+    },
+    {
+     "url": "https://www.lemonde.fr/societe/article/2026/10/18/lors-des-manifestations-du-17-octobre-les-forces-de-l-ordre-depassees-par-une-mobilisation-imprevisible-quelque-chose-a-foire-ce-n-est-pas-concevable-que-des-groupes-puissent-arriver-si-pres-de-l-elysee_6797038_3224.html",
+     "media": "Le Monde",
+     "titre": "Manifestations du 17 octobre : les forces de l'ordre dépassées",
+     "date": "2026-10-18"
+    },
+    {
+     "url": "https://www.lemonde.fr/politique/article/2026/10/19/mobilisation-du-17-octobre-emmanuel-macron-tente-de-reaffirmer-son-autorite-ebranlee-par-les-violences-et-les-mouvements-sociaux_6797402_823448.html",
+     "media": "Le Monde",
+     "titre": "Mobilisation du 17 octobre : Emmanuel Macron tente de réaffirmer son autorité",
+     "date": "2026-10-19"
+    },
+    {
+     "url": "https://www.lemonde.fr/international/article/2026/11/03/des-syndicats-et-associations-de-sept-pays-europeens-appellent-a-manifester-contre-la-vie-chere-fin-novembre_6805665_3210.html",
+     "media": "Le Monde",
+     "titre": "Des syndicats et associations de sept pays europeens appellent a…",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://www.parismatch.be/actualites/societe/2026/10/07/le-blocus-des-lyceens-francais-sexporte-en-belgique-pourquoi-nos-etudiants-du-secondaire-manifestent-ils-JRSQLVH4TNHWPADWTPONFEUSMU/",
+     "media": "Paris Match Belgique",
+     "titre": "Le blocus des lycéens français s'exporte en Belgique",
+     "date": "2026-10-07"
+    },
+    {
+     "url": "https://www.lalibre.be/belgique/enseignement/2026/05/06/du-fric-pour-lenseignement-public-700-etudiants-manifestent-a-bruxelles-contre-la-hausse-du-minerval-BMH5QTHSLZGZLGA2UHBGGU3C2Q/",
+     "media": "La Libre",
+     "titre": "« Du fric pour l'enseignement public » : 700 étudiants manifestent",
+     "date": "2026-05-06"
+    },
+    {
+     "url": "https://www.rtp.pt/noticias/economia/estudantes-anunciam-protesto-em-lisboa-contra-descongelamento-das-propinas_n1770728",
+     "media": "RTP",
+     "titre": "Estudantes anunciam protesto em Lisboa contra o descongelamento das propinas"
+    },
+    {
+     "url": "https://www.sabado.pt/portugal/amp/mais-de-200-estudantes-protestaram-em-coimbra-contra-aumento-de-propinas",
+     "media": "Sábado",
+     "titre": "Mais de 200 estudantes protestaram em Coimbra"
+    },
+    {
+     "url": "https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/discours-de-cloture-de-jean-noel-barrot-ministre-de-l-europe-et-des-affaires-etrangeres-lors-de-l",
+     "media": "Diplomatie française",
+     "titre": "Discours de clôture de Jean-Noël Barrot"
+    },
+    {
+     "url": "https://www.ilfoglio.it/cronaca/2026/10/20/news/crosetto-i-fatti-di-milano-sono-frutto-della-guerra-ibrida--411114",
+     "media": "Il Foglio",
+     "titre": "Crosetto: i fatti di Milano sono frutto della guerra ibrida",
+     "date": "2026-10-20"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=4qZp-zB5MQY",
+     "media": "YouTube",
+     "titre": "TLDR News EU : What's Actually Driving the European Riots?",
+     "date": "2026-10-30",
+     "note": "les soupçons de « guerre hybride » en Italie et en France",
+     "video": true
+    },
+    {
+     "url": "https://www.dhnet.be/dernieres-depeches/2026/10/26/apres-un-mois-de-crise-lyceenne-le-gouvernement-promet-lundi-des-reponses-tres-concretes-PQCA73EZPRDMZNK4AFE36VWDAY/",
+     "media": "La DH",
+     "titre": "Après un mois de crise lycéenne, le gouvernement promet des mesures",
+     "date": "2026-10-26"
+    },
+    {
+     "url": "https://www.parismatch.be/actualites/2026/11/03/colere-des-etudiants-en-belgique-des-organisations-saisissent-la-justice-pour-protester-contre-la-reforme-du-minerval-26LHBICXJFDW3AKMYZZOXL3I3I/",
+     "media": "Paris Match Belgique",
+     "titre": "Colère des étudiants en Belgique : des organisations saisissent la justice",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://www.bruxelles-j.be/actus/minerval-hausse-frais-etudes-aides-etudiants/",
+     "media": "Bruxelles-J",
+     "titre": "Minerval hausse frais etudes aides etudiants"
+    },
+    {
+     "url": "https://www.amnesty.fr/actualites/france-mouvement-lyceens-blocus-lycees-point-sur-la-situation/",
+     "media": "Amnesty International",
+     "titre": "France : mouvement lycéen et blocus, le point sur la situation"
     }
    ],
    "images": [
@@ -125,20 +295,6 @@
    "rubrique": "actualites",
    "titre": "Des pirates informatiques font chauffer les frigos",
    "langue": "fr",
-   "sources": [
-    "https://www.lemonde.fr/economie/article/2026/10/12/journee-noire-dans-les-supermarches-francais-apres-une-cyberattaque-massive_6792763_3234.html",
-    "https://www.lesoir.be/780501/article/2026-11-02/des-frigos-transformes-en-fours-ce-qui-se-cache-derriere-la-cyberattaque-des",
-    "https://www.lemonde.fr/pixels/article/2026/11/04/des-frigos-de-l-etablissement-francais-du-sang-a-leur-tour-victimes-d-une-cyberattaque_6806228_4408996.html",
-    "https://www.parismatch.be/actualites/monde/2026/10/12/inedit-et-dune-extreme-gravite-de-nombreux-supermarches-contraints-de-jeter-une-grande-quantite-de-produits-frais-et-surgeles-en-france-2K5XHP7LYFB6PCUIU56YP65GQA/",
-    "https://www.dhnet.be/dernieres-depeches/2026/11/02/attaque-dinstallations-frigorifiques-le-parquet-federal-ouvre-une-enquete-EPBGE75OYNDGFFBF67XQPGJGJI/",
-    "https://www.dhnet.be/dernieres-depeches/2026/11/03/nouvelle-cyberattaque-visant-des-refrigerateurs-reunion-durgence-en-italie-OZR7QQQVYRDSDIKL6JYQZWNDF4/",
-    "https://fr.euronews.com/2026/11/04/cyberattaque-des-chambres-froides-de-letablissement-francais-du-sang-piratees",
-    "https://www.retaildetail.eu/?p=47058",
-    "https://www.it-connect.fr/cyberattaque-efs-coolworld-congelateurs-plasma/",
-    "https://www.techniques-ingenieur.fr/actualite/breves-afp/des-chambres-froides-de-letablissement-francais-du-sang-victimes-dune-cyberattaque-dun-prestataire-165616/",
-    "https://www.24matins.fr/frigos-pirates-en-supermarche-lanssi-denonce-des-erreurs-basiques-1422863",
-    "https://www.parismatch.be/actualites/societe/2026/11/04/cyberattaques-contre-des-supermarches-des-hackers-prorusses-revendiquent-les-attaques-QSYUP7ZMKBFHDNM72SWSVNOFBM/"
-   ],
    "ia": [
     {
      "l": "I",
@@ -165,11 +321,81 @@
      "n": "m"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.lemonde.fr/economie/article/2026/10/12/journee-noire-dans-les-supermarches-francais-apres-une-cyberattaque-massive_6792763_3234.html",
+     "media": "Le Monde",
+     "titre": "Journée noire dans les supermarchés français après une cyberattaque massive",
+     "date": "2026-10-12"
+    },
+    {
+     "url": "https://www.lesoir.be/780501/article/2026-11-02/des-frigos-transformes-en-fours-ce-qui-se-cache-derriere-la-cyberattaque-des",
+     "media": "Le Soir",
+     "titre": "Des frigos transformés en fours : ce qui se cache derrière la cyberattaque",
+     "date": "2026-11-02"
+    },
+    {
+     "url": "https://www.lemonde.fr/pixels/article/2026/11/04/des-frigos-de-l-etablissement-francais-du-sang-a-leur-tour-victimes-d-une-cyberattaque_6806228_4408996.html",
+     "media": "Le Monde",
+     "titre": "Des frigos de l'Établissement français du sang à leur tour victimes",
+     "date": "2026-11-04"
+    },
+    {
+     "url": "https://www.parismatch.be/actualites/monde/2026/10/12/inedit-et-dune-extreme-gravite-de-nombreux-supermarches-contraints-de-jeter-une-grande-quantite-de-produits-frais-et-surgeles-en-france-2K5XHP7LYFB6PCUIU56YP65GQA/",
+     "media": "Paris Match Belgique",
+     "titre": "De nombreux supermarchés contraints de jeter des produits frais et surgelés",
+     "date": "2026-10-12"
+    },
+    {
+     "url": "https://www.dhnet.be/dernieres-depeches/2026/11/02/attaque-dinstallations-frigorifiques-le-parquet-federal-ouvre-une-enquete-EPBGE75OYNDGFFBF67XQPGJGJI/",
+     "media": "La DH",
+     "titre": "Attaque d'installations frigorifiques (dépêche Belga)",
+     "date": "2026-11-02"
+    },
+    {
+     "url": "https://www.dhnet.be/dernieres-depeches/2026/11/03/nouvelle-cyberattaque-visant-des-refrigerateurs-reunion-durgence-en-italie-OZR7QQQVYRDSDIKL6JYQZWNDF4/",
+     "media": "La DH",
+     "titre": "Nouvelle cyberattaque (dépêche Belga)",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://fr.euronews.com/2026/11/04/cyberattaque-des-chambres-froides-de-letablissement-francais-du-sang-piratees",
+     "media": "Euronews",
+     "titre": "Cyberattaque des chambres froides",
+     "date": "2026-11-04"
+    },
+    {
+     "url": "https://www.retaildetail.eu/?p=47058",
+     "media": "RetailDetail"
+    },
+    {
+     "url": "https://www.it-connect.fr/cyberattaque-efs-coolworld-congelateurs-plasma/",
+     "media": "IT-Connect",
+     "titre": "Cyberattaque : EFS, congélateurs et plasma"
+    },
+    {
+     "url": "https://www.techniques-ingenieur.fr/actualite/breves-afp/des-chambres-froides-de-letablissement-francais-du-sang-victimes-dune-cyberattaque-dun-prestataire-165616/",
+     "media": "Techniques de l'ingénieur",
+     "titre": "Des chambres froides visées (brève AFP)"
+    },
+    {
+     "url": "https://www.24matins.fr/frigos-pirates-en-supermarche-lanssi-denonce-des-erreurs-basiques-1422863",
+     "media": "24matins",
+     "titre": "Frigos piratés en supermarché : l'ANSSI au Sénat"
+    },
+    {
+     "url": "https://www.parismatch.be/actualites/societe/2026/11/04/cyberattaques-contre-des-supermarches-des-hackers-prorusses-revendiquent-les-attaques-QSYUP7ZMKBFHDNM72SWSVNOFBM/",
+     "media": "Paris Match Belgique",
+     "titre": "Cyberattaques : une revendication non vérifiée",
+     "date": "2026-11-04"
+    }
+   ],
    "images": [
     {
      "legende": "Le pirate entre par la même porte que le frigoriste",
      "source": "illustration CdJ",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/03-frigos-1-schema.svg"
     }
    ]
   },
@@ -177,14 +403,6 @@
    "rubrique": "sciences",
    "titre": "Uma IA no hospital? Cinco perguntas a fazer-lhe",
    "langue": "pt",
-   "sources": [
-    "https://doi.org/10.1038/s43018-026-01127-0",
-    "https://doi.org/10.1053/j.gastro.2025.12.020",
-    "https://doi.org/10.1371/journal.pmed.1002683",
-    "https://doi.org/10.1001/jamainternmed.2021.2626",
-    "https://doi.org/10.1001/jamanetworkopen.2024.40969",
-    "https://doi.org/10.1016/S2589-7500(24)00267-X"
-   ],
    "ia": [
     {
      "l": "I",
@@ -209,6 +427,38 @@
     {
      "l": "T",
      "n": "i"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://doi.org/10.1038/s43018-026-01127-0",
+     "media": "Étude",
+     "titre": "Kelly et al., Nature Cancer (2026)"
+    },
+    {
+     "url": "https://doi.org/10.1053/j.gastro.2025.12.020",
+     "media": "Étude",
+     "titre": "Dong et al., Gastroenterology (2026)"
+    },
+    {
+     "url": "https://doi.org/10.1371/journal.pmed.1002683",
+     "media": "Étude",
+     "titre": "Zech et al., PLOS Medicine (2018)"
+    },
+    {
+     "url": "https://doi.org/10.1001/jamainternmed.2021.2626",
+     "media": "Étude",
+     "titre": "Wong et al., JAMA Internal Medicine (2021)"
+    },
+    {
+     "url": "https://doi.org/10.1001/jamanetworkopen.2024.40969",
+     "media": "Étude",
+     "titre": "Goh et al., JAMA Network Open (2024)"
+    },
+    {
+     "url": "https://doi.org/10.1016/S2589-7500(24)00267-X",
+     "media": "Étude",
+     "titre": "Hernström et al., The Lancet Digital Health (2025)"
     }
    ],
    "images": []
@@ -217,21 +467,6 @@
    "rubrique": "sciences",
    "titre": "Le cachalot, champion des abysses",
    "langue": "fr",
-   "sources": [
-    "https://www.youtube.com/watch?v=jqv3RPjHNkY",
-    "https://www.vrt.be/vrtnws/nl/2024/04/25/potvis-valentijn-hangt-in-nationaal-visserijmuseum-oostduinkerke/",
-    "https://doi.org/10.1121/1.1586258",
-    "https://doi.org/10.1086/284120",
-    "https://doi.org/10.1038/srep28562",
-    "https://doi.org/10.1098/rsbl.2007.0005",
-    "https://doi.org/10.1111/j.1748-7692.2002.tb01018.x",
-    "https://doi.org/10.1038/nature09067",
-    "https://doi.org/10.1098/rsbl.2021.0030",
-    "https://doi.org/10.1038/s41467-024-47221-8",
-    "https://doi.org/10.1016/j.cub.2007.11.003",
-    "https://iucn-csg.org/6-updated-cetacean-red-list-assessments-published-in-december-2019/",
-    "https://odnaturenews.naturalsciences.be/wp-content/uploads/2025/06/Les-Echoues.-Mammiferes-marins-en-Belgique-en-2024.pdf"
-   ],
    "ia": [
     {
      "l": "I",
@@ -258,11 +493,81 @@
      "n": "i"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=jqv3RPjHNkY",
+     "media": "YouTube",
+     "titre": "BeyondTheBlue : Why Sperm Whales are the Most Feared Animal in the Ocean",
+     "video": true
+    },
+    {
+     "url": "https://www.vrt.be/vrtnws/nl/2024/04/25/potvis-valentijn-hangt-in-nationaal-visserijmuseum-oostduinkerke/",
+     "media": "VRT",
+     "titre": "Potvis Valentijn hangt in het Visserijmuseum van Oostduinkerke",
+     "date": "2024-04-25"
+    },
+    {
+     "url": "https://doi.org/10.1121/1.1586258",
+     "media": "Étude",
+     "titre": "Møhl et al., J. Acoust. Soc. Am. (2003)"
+    },
+    {
+     "url": "https://doi.org/10.1086/284120",
+     "media": "Étude",
+     "titre": "Norris & Møhl, American Naturalist (1983)"
+    },
+    {
+     "url": "https://doi.org/10.1038/srep28562",
+     "media": "Étude",
+     "titre": "Fais et al., Scientific Reports (2016)"
+    },
+    {
+     "url": "https://doi.org/10.1098/rsbl.2007.0005",
+     "media": "Étude",
+     "titre": "Wilson et al., Biology Letters (2007)"
+    },
+    {
+     "url": "https://doi.org/10.1111/j.1748-7692.2002.tb01018.x",
+     "media": "Étude",
+     "titre": "Watkins et al., Marine Mammal Science (2002)"
+    },
+    {
+     "url": "https://doi.org/10.1038/nature09067",
+     "media": "Étude",
+     "titre": "Lambert et al., Nature (2010)"
+    },
+    {
+     "url": "https://doi.org/10.1098/rsbl.2021.0030",
+     "media": "Étude",
+     "titre": "Whitehead et al., Biology Letters (2021)"
+    },
+    {
+     "url": "https://doi.org/10.1038/s41467-024-47221-8",
+     "media": "Étude",
+     "titre": "Sharma et al., Nature Communications (2024)"
+    },
+    {
+     "url": "https://doi.org/10.1016/j.cub.2007.11.003",
+     "media": "Étude",
+     "titre": "Miller et al., Current Biology (2008)"
+    },
+    {
+     "url": "https://iucn-csg.org/6-updated-cetacean-red-list-assessments-published-in-december-2019/",
+     "media": "UICN",
+     "titre": "Groupe de spécialistes des cétacés de l'UICN"
+    },
+    {
+     "url": "https://odnaturenews.naturalsciences.be/wp-content/uploads/2025/06/Les-Echoues.-Mammiferes-marins-en-Belgique-en-2024.pdf",
+     "media": "IRSNB",
+     "titre": "IRSNB : Les Échoués, mammifères marins en Belgique en 2024"
+    }
+   ],
    "images": [
     {
      "legende": "Le trajet du clic dans la tête du cachalot (schéma simplifié)",
      "source": "illustration CdJ d'après « Sperm whale head anatomy » de Kurzon (Wikimedia Commons, CC BY-SA 3.0)",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/12-cachalots-1-echolocation-tete.png"
     }
    ]
   },
@@ -270,19 +575,6 @@
    "rubrique": "sciences",
    "titre": "O verdadeiro preço de uma pergunta à IA",
    "langue": "pt",
-   "sources": [
-    "https://www.youtube.com/watch?v=YgoiujmwLKI",
-    "https://www.youtube.com/watch?v=JrCfOzeWsgs",
-    "https://www.lemonde.fr/international/video/2026/11/03/temoignage-un-immense-data-center-de-chatgpt-s-installe-a-cote-de-chez-lui_6805598_3210.html",
-    "https://www.iea.org/reports/energy-and-ai/executive-summary",
-    "https://arxiv.org/abs/2304.03271",
-    "https://www.eenews.net/articles/texas-approves-data-center-behemoths-massive-gas-power-play",
-    "https://axios.com/2026/04/19/ai-data-center-project-troubles-texas",
-    "https://www.brusselstimes.com/2322989/belgian-data-centers-drive-energy-demands-to-record-highs",
-    "https://eur-lex.europa.eu/eli/reg_del/2024/1364",
-    "https://www.thestar.com.my/tech/tech-news/2025/10/23/belgium-mulls-energy-limits-for-power-hungry-data-centres-as-ai-demand-surges",
-    "https://www.googlecloudpresscorner.com/2025-10-07-Google-Announces-New-EUR5-Billion-AI-Infrastructure-Investment-in-Belgium-through-2027"
-   ],
    "ia": [
     {
      "l": "I",
@@ -313,11 +605,75 @@
      "n": "i"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.youtube.com/watch?v=YgoiujmwLKI",
+     "media": "YouTube",
+     "titre": "Be Smart : The Real Cost of AI Will Shock You",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=JrCfOzeWsgs",
+     "media": "YouTube",
+     "titre": "Le Monde (vidéo) : le projet de trop",
+     "video": true
+    },
+    {
+     "url": "https://www.lemonde.fr/international/video/2026/11/03/temoignage-un-immense-data-center-de-chatgpt-s-installe-a-cote-de-chez-lui_6805598_3210.html",
+     "media": "Le Monde",
+     "titre": "Témoignage : un immense data center s'installe à côté…",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://www.iea.org/reports/energy-and-ai/executive-summary",
+     "media": "AIE",
+     "titre": "Agence internationale de l'énergie : résumé du rapport"
+    },
+    {
+     "url": "https://arxiv.org/abs/2304.03271",
+     "media": "arXiv",
+     "titre": "Li, Yang, Islam, Ren, arXiv 2304.03271 (2025)"
+    },
+    {
+     "url": "https://www.eenews.net/articles/texas-approves-data-center-behemoths-massive-gas-power-play",
+     "media": "E&E News",
+     "titre": "E&E News (26 février 2026)"
+    },
+    {
+     "url": "https://axios.com/2026/04/19/ai-data-center-project-troubles-texas",
+     "media": "Axios",
+     "titre": "Axios (19 avril 2026)",
+     "date": "2026-04-19"
+    },
+    {
+     "url": "https://www.brusselstimes.com/2322989/belgian-data-centers-drive-energy-demands-to-record-highs",
+     "media": "The Brussels Times",
+     "titre": "Centres de données en Belgique : les chiffres d'Elia"
+    },
+    {
+     "url": "https://eur-lex.europa.eu/eli/reg_del/2024/1364",
+     "media": "EUR-Lex",
+     "titre": "Règlement délégué (UE) 2024/1364"
+    },
+    {
+     "url": "https://www.thestar.com.my/tech/tech-news/2025/10/23/belgium-mulls-energy-limits-for-power-hungry-data-centres-as-ai-demand-surges",
+     "media": "The Star",
+     "titre": "Belgium mulls energy limits for power-hungry data centres",
+     "date": "2025-10-23"
+    },
+    {
+     "url": "https://www.googlecloudpresscorner.com/2025-10-07-Google-Announces-New-EUR5-Billion-AI-Infrastructure-Investment-in-Belgium-through-2027",
+     "media": "Google",
+     "titre": "Communiqué de Google",
+     "date": "2025-10-08"
+    }
+   ],
    "images": [
     {
      "legende": "Eletricidade consumida pelos centros de dados na Bélgica: hoje e em 2034, se todos os projetos anunciados avançarem",
      "source": "illustration CdJ d'après Elia (Brussels Times)",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/13-cout-ia-1-belgique.svg"
     }
    ]
   },
@@ -325,22 +681,6 @@
    "rubrique": "sciences",
    "titre": "Des maths sans mathématiciens ?",
    "langue": "fr",
-   "sources": [
-    "https://www.lemonde.fr/sciences/article/2026/10/10/nouveau-coup-de-massue-d-openai-sur-les-mathematiciens-ils-ont-annihile-mon-domaine-de-recherche_6790951_1650684.html",
-    "https://github.com/openai/math",
-    "https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019",
-    "https://next.ink/256363/lia-menace-la-pratique-scientifique-deplorent-des-milliers-de-mathematiciens/",
-    "https://the-decoder.com/leading-mathematicians-fear-ai-is-making-their-field-dumber-and-warn-the-rest-of-us-is-next/",
-    "https://runtimewire.com/article/openai-withdraws-three-ai-math-papers-sign-error",
-    "https://www.ibtimes.co.uk/openai-ai-generated-proofs-mathematicians-backlash-1825190",
-    "https://www.youtube.com/watch?v=KqiDqJMxg6o",
-    "https://www.youtube.com/watch?v=z_sXLlLVUls",
-    "https://www.youtube.com/watch?v=dsBXYAwQieI",
-    "https://www.youtube.com/watch?v=7U_fgxzgSrY",
-    "https://www.youtube.com/watch?v=DSwK2el091g",
-    "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
-    "https://www.youtube.com/watch?v=omuJpoV-Ko4"
-   ],
    "ia": [
     {
      "l": "I",
@@ -367,11 +707,92 @@
      "n": "i"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.lemonde.fr/sciences/article/2026/10/10/nouveau-coup-de-massue-d-openai-sur-les-mathematiciens-ils-ont-annihile-mon-domaine-de-recherche_6790951_1650684.html",
+     "media": "Le Monde",
+     "titre": "Nouveau coup de massue d'OpenAI sur les mathématiciens",
+     "date": "2026-10-10"
+    },
+    {
+     "url": "https://github.com/openai/math",
+     "media": "GitHub",
+     "titre": "openai/math (dépôt de code)"
+    },
+    {
+     "url": "https://quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019",
+     "media": "Quanta Magazine",
+     "titre": "Quanta Magazine (19 octobre 2026)"
+    },
+    {
+     "url": "https://next.ink/256363/lia-menace-la-pratique-scientifique-deplorent-des-milliers-de-mathematiciens/",
+     "media": "Next",
+     "titre": "« L'IA menace la pratique scientifique », déplorent des milliers de…"
+    },
+    {
+     "url": "https://the-decoder.com/leading-mathematicians-fear-ai-is-making-their-field-dumber-and-warn-the-rest-of-us-is-next/",
+     "media": "The Decoder",
+     "titre": "Leading mathematicians fear AI is making their field dumber"
+    },
+    {
+     "url": "https://runtimewire.com/article/openai-withdraws-three-ai-math-papers-sign-error",
+     "media": "Runtime Wire",
+     "titre": "OpenAI withdraws three AI math papers over a sign error"
+    },
+    {
+     "url": "https://www.ibtimes.co.uk/openai-ai-generated-proofs-mathematicians-backlash-1825190",
+     "media": "IBTimes",
+     "titre": "OpenAI's AI-generated proofs: mathematicians' backlash"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=KqiDqJMxg6o",
+     "media": "YouTube",
+     "titre": "Prof Gio : You Truly Don't Understand What Just Happened to Mathematics",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=z_sXLlLVUls",
+     "media": "YouTube",
+     "titre": "Two Minute Papers : OpenAI's New AI Is Doing Things We Barely Understand",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=dsBXYAwQieI",
+     "media": "YouTube",
+     "titre": "Adem B10 : Mathematicians Checked the AI's Riemann Breakthrough",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=7U_fgxzgSrY",
+     "media": "YouTube",
+     "titre": "Adem B10 : Terence Tao, « The Age of Heroes » in Math Is Over",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=DSwK2el091g",
+     "media": "YouTube",
+     "titre": "Adem B10 : He Found His Own Unpublished Proof in OpenAI's 722 Papers",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=LKrwhjOI8Nc",
+     "media": "YouTube",
+     "titre": "3Blue1Brown : There's never been a better time to go into math",
+     "video": true
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=omuJpoV-Ko4",
+     "media": "YouTube",
+     "titre": "Numberphile : The Strip Mining of Mathematical Proofs (Hugo Duminil-Copin)",
+     "video": true
+    }
+   ],
    "images": [
     {
      "legende": "Les sept ponts de Königsberg",
      "source": "illustration CdJ d'après Euler (1736)",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/14-maths-ia-1-konigsberg.svg"
     },
     {
      "legende": "Le mathématicien Timothy Gowers",
@@ -384,13 +805,14 @@
    "rubrique": "sciences",
    "titre": "Multiplicar sem a tabuada",
    "langue": "pt",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": [
     {
      "legende": "12 × 345: só se somam os dobros das linhas ímpares",
      "source": "ilustração CdJ a partir do exemplo do autor",
-     "licence": "CC BY-SA 4.0"
+     "licence": "CC BY-SA 4.0",
+     "fichier": "img/numeros/15/16-tabuada-1-metodo.svg"
     }
    ]
   },
@@ -398,15 +820,14 @@
    "rubrique": "culture",
    "titre": "Transformers, une saga « so eighties »",
    "langue": "fr",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "culture",
    "titre": "La fiction-panier, une idée géniale d’Ursula K. Le Guin",
    "langue": "fr",
-   "sources": [],
    "ia": [
     {
      "l": "I",
@@ -425,22 +846,23 @@
      "n": "i"
     }
    ],
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "culture",
    "titre": "Matrix",
    "langue": "fr",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "culture",
    "titre": "Halloween",
    "langue": "fr",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": [
     {
      "legende": "Lanterne-navet irlandaise du début du XXe siècle, au musée de la vie rurale (Irlande)",
@@ -453,24 +875,14 @@
    "rubrique": "ecriture",
    "titre": "Les pauvres : point de vue",
    "langue": "fr",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "ecriture",
    "titre": "Um romance, uma IA e uma questão de confiança",
    "langue": "pt",
-   "sources": [
-    "https://www.lemonde.fr/pixels/article/2026/10/21/l-ia-a-ete-utilisee-pour-l-ecriture-du-roman-de-thelyson-orelien-annonce-son-editeur-canadien-qui-met-fin-a-sa-collaboration-avec-l-auteur_6798291_4408996.html",
-    "https://www.lemonde.fr/idees/article/2026/11/02/l-auteur-d-un-livre-ecrit-par-ia-n-a-pas-fait-l-effort-d-aller-chercher-son-uvre-la-ou-elle-se-trouve-en-lui-meme_6805276_3232.html",
-    "https://www.parismatch.be/culture/litterature/2026/10/22/thelyson-orelien-a-utilise-lia-pour-ecrire-son-roman-cetait-ca-ou-mourir-annonce-son-editeur-URCW3J2R7FC33LFZKSZBP6DRUM/",
-    "https://www.dhnet.be/dernieres-depeches/2026/11/03/le-goncourt-decerne-a-philippe-jaenada-pour-linconnue-du-quai-de-javel-R6N5AJPHAJCA7MY7A7OJDRNWLA/",
-    "https://actualitte.com/article/134194/prix-litteraires/le-prix-goncourt-exclut-le-roman-de-thelyson-orelien",
-    "https://www.livreshebdo.fr/article/de-nouveaux-elements-indiquent-que-lia-ete-utilisee-les-editions-du-boreal-rompent-avec",
-    "https://www.livreshebdo.fr/article/affaire-thelyson-orelien-les-editeurs-et-les-prix-litteraires-sous-la-pression-de-lia",
-    "https://www.livreshebdo.fr/article/les-finalistes-du-prix-renaudot-2026"
-   ],
    "ia": [
     {
      "l": "I",
@@ -497,15 +909,58 @@
      "n": "i"
     }
    ],
+   "sources": [
+    {
+     "url": "https://www.lemonde.fr/pixels/article/2026/10/21/l-ia-a-ete-utilisee-pour-l-ecriture-du-roman-de-thelyson-orelien-annonce-son-editeur-canadien-qui-met-fin-a-sa-collaboration-avec-l-auteur_6798291_4408996.html",
+     "media": "Le Monde",
+     "titre": "L'IA a été utilisée pour l'écriture du roman de Thélyson Orélien",
+     "date": "2026-10-21"
+    },
+    {
+     "url": "https://www.lemonde.fr/idees/article/2026/11/02/l-auteur-d-un-livre-ecrit-par-ia-n-a-pas-fait-l-effort-d-aller-chercher-son-uvre-la-ou-elle-se-trouve-en-lui-meme_6805276_3232.html",
+     "media": "Le Monde",
+     "titre": "« L'auteur d'un livre écrit par IA n'a pas fait l'effort… »",
+     "date": "2026-11-02"
+    },
+    {
+     "url": "https://www.parismatch.be/culture/litterature/2026/10/22/thelyson-orelien-a-utilise-lia-pour-ecrire-son-roman-cetait-ca-ou-mourir-annonce-son-editeur-URCW3J2R7FC33LFZKSZBP6DRUM/",
+     "media": "Paris Match Belgique",
+     "titre": "Thélyson Orélien a utilisé l'IA pour écrire son roman",
+     "date": "2026-10-22"
+    },
+    {
+     "url": "https://www.dhnet.be/dernieres-depeches/2026/11/03/le-goncourt-decerne-a-philippe-jaenada-pour-linconnue-du-quai-de-javel-R6N5AJPHAJCA7MY7A7OJDRNWLA/",
+     "media": "La DH",
+     "titre": "Le Goncourt décerné à Philippe Jaenada",
+     "date": "2026-11-03"
+    },
+    {
+     "url": "https://actualitte.com/article/134194/prix-litteraires/le-prix-goncourt-exclut-le-roman-de-thelyson-orelien",
+     "media": "ActuaLitté",
+     "titre": "ActuaLitté (25 septembre 2026)"
+    },
+    {
+     "url": "https://www.livreshebdo.fr/article/de-nouveaux-elements-indiquent-que-lia-ete-utilisee-les-editions-du-boreal-rompent-avec",
+     "media": "Livres Hebdo",
+     "titre": "Livres Hebdo (21 octobre 2026)"
+    },
+    {
+     "url": "https://www.livreshebdo.fr/article/affaire-thelyson-orelien-les-editeurs-et-les-prix-litteraires-sous-la-pression-de-lia",
+     "media": "Livres Hebdo",
+     "titre": "Affaire Thélyson Orélien : les éditeurs et les prix littéraires sous la…"
+    },
+    {
+     "url": "https://www.livreshebdo.fr/article/les-finalistes-du-prix-renaudot-2026",
+     "media": "Livres Hebdo",
+     "titre": "Les finalistes du prix Renaudot 2026"
+    }
+   ],
    "images": []
   },
   {
    "rubrique": "ecriture",
    "titre": "Transparence et évolution du Courrier",
    "langue": "fr",
-   "sources": [
-    "https://iskander.github.io/correio-do-javali/"
-   ],
    "ia": [
     {
      "l": "I",
@@ -518,6 +973,13 @@
     {
      "l": "T",
      "n": "i"
+    }
+   ],
+   "sources": [
+    {
+     "url": "https://iskander.github.io/correio-do-javali/",
+     "media": "Correio do Javali",
+     "titre": "Le site compagnon du journal"
     }
    ],
    "images": [
@@ -532,9 +994,6 @@
    "rubrique": "ecriture",
    "titre": "Transparência e evolução do Correio",
    "langue": "pt",
-   "sources": [
-    "https://iskander.github.io/correio-do-javali/"
-   ],
    "ia": [
     {
      "l": "I",
@@ -549,39 +1008,35 @@
      "n": "i"
     }
    ],
+   "sources": [
+    {
+     "url": "https://iskander.github.io/correio-do-javali/",
+     "media": "Correio do Javali",
+     "titre": "Le site compagnon du journal"
+    }
+   ],
    "images": []
   },
   {
    "rubrique": "chroniques",
    "titre": "O árduo caminho do regresso à universidade",
    "langue": "pt",
-   "sources": [],
    "ia": null,
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "chroniques",
-   "titre": "Eleito para o Conselho Científico do IARC, derrotado pelos sapatos",
+   "titre": "Eleito para um conselho científico, derrotado pelos sapatos",
    "langue": "pt",
-   "sources": [],
    "ia": null,
-   "images": [
-    {
-     "legende": "As solas, depois da aventura",
-     "source": "foto de família"
-    }
-   ]
+   "sources": [],
+   "images": []
   },
   {
    "rubrique": "chroniques",
    "titre": "Deux recettes du stage, à faire soi-même",
    "langue": "fr",
-   "sources": [
-    "https://www.youtube.com/watch?v=fdOuj7d9L9Y",
-    "https://aaronandclaire.com/chicken-chow-mein-recipe/",
-    "https://www.youtube.com/watch?v=pHrJuur1E00",
-    "https://www.jamieoliver.com/recipes/vegetables-recipes/veggie-chilli"
-   ],
    "ia": [
     {
      "l": "I",
@@ -600,26 +1055,36 @@
      "n": "m"
     }
    ],
-   "images": [
+   "sources": [
     {
-     "legende": "Les légumes du chili sont prêts, le 28 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
+     "url": "https://www.youtube.com/watch?v=fdOuj7d9L9Y",
+     "media": "YouTube",
+     "titre": "Aaron and Claire : Chicken Chow Mein (vidéo)",
+     "video": true
     },
     {
-     "legende": "Le chow mein maison, le 26 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
+     "url": "https://aaronandclaire.com/chicken-chow-mein-recipe/",
+     "media": "Aaron and Claire",
+     "titre": "Chicken chow mein (recette)"
+    },
+    {
+     "url": "https://www.youtube.com/watch?v=pHrJuur1E00",
+     "media": "YouTube",
+     "titre": "Jamie Oliver : Delicious Store-cupboard Chilli (vidéo)",
+     "video": true
+    },
+    {
+     "url": "https://www.jamieoliver.com/recipes/vegetables-recipes/veggie-chilli",
+     "media": "Jamie Oliver",
+     "titre": "Veggie chilli (recette)"
     }
-   ]
+   ],
+   "images": []
   },
   {
    "rubrique": "chroniques",
    "titre": "Stage IA : chacun son projet",
    "langue": "fr",
-   "sources": [
-    "https://iskander.github.io/correio-do-javali/"
-   ],
    "ia": [
     {
      "l": "I",
@@ -634,26 +1099,18 @@
      "n": "m"
     }
    ],
-   "images": [
+   "sources": [
     {
-     "legende": "Le premier matin du stage, le 26 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
+     "url": "https://iskander.github.io/correio-do-javali/",
+     "media": "Correio do Javali",
+     "titre": "Le site compagnon du journal"
+    }
+   ],
+   "images": [
     {
      "legende": "La connexion avec la nature : le départ de Strasbourg",
      "source": "jeu créé pendant le stage, à jouer sur le site du journal",
      "licence": "CC BY-SA 4.0"
-    },
-    {
-     "legende": "Coup de main devant l’écran, le 28 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": "On fait le point avant la présentation",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
     }
    ]
   },
@@ -661,48 +1118,38 @@
    "rubrique": "chroniques",
    "titre": "Le bal d’Halloween de mon école",
    "langue": "fr",
-   "sources": [],
    "ia": null,
+   "sources": [],
+   "images": []
+  },
+  {
+   "rubrique": "chroniques",
+   "titre": "Uma nascença",
+   "langue": "pt",
+   "ia": [
+    {
+     "l": "I",
+     "n": "h"
+    },
+    {
+     "l": "E",
+     "n": "h"
+    },
+    {
+     "l": "O",
+     "n": "m"
+    }
+   ],
+   "sources": [],
    "images": []
   },
   {
    "rubrique": "visites",
    "titre": "Londres",
    "langue": "fr",
-   "sources": [],
    "ia": null,
-   "images": [
-    {
-     "legende": "Premier trajet en métro, le 2 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": "Petit-déjeuner avant les studios",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": null,
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": "Une pause bien méritée",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": "De quoi lire en anglais",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    },
-    {
-     "legende": "Le retour en train, le 4 octobre",
-     "source": "photo de famille",
-     "licence": "tous droits réservés"
-    }
-   ]
+   "sources": [],
+   "images": []
   }
  ],
  "jeux": {

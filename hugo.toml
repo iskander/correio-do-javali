@@ -25,6 +25,3 @@ defaultContentLanguageInSubdir = false
 [params]
   # URL de l'application Google Apps Script (compte correiojavali) qui reçoit les envois
   envoiURL = "https://script.google.com/macros/s/AKfycbxeveqVDlipW8DRbXSUpnKIkeQ4GWJNGcqyVmtN4gBtni7A_zG2xfF4kDox2kmBoQT-Wg/exec"
-
-[markup.goldmark.renderer]
-  unsafe = true

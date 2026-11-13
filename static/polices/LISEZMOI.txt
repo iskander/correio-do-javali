@@ -1,0 +1,4 @@
+Polices servies par le site (aucune requête vers Google Fonts), sous licence SIL Open Font License 1.1 :
+Noto Serif, Open Sans, Libre Baskerville, Cormorant Garamond, Open Sauce One.
+Fichiers réduits aux caractères latins à partir des polices du journal (dossier fonts/ des outils).
+Texte de la licence : https://openfontlicense.org

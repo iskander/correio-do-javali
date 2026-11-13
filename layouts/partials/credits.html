@@ -1,0 +1,3 @@
+{{/* Crédits des images d'un article : une ligne compacte */}}
+{{ with . }}<p class="credits" lang="{{ site.Language.Lang }}">{{ i18n "images" }} :
+{{ range $i, $im := . }}{{ if $i }} · {{ end }}{{ with $im.legende }}{{ . }}{{ end }}{{ with $im.source }}{{ if hasPrefix . "http" }} (<a href="{{ index (split . " ") 0 }}" rel="noopener nofollow">{{ i18n "source" }}</a>{{ with $im.licence }}, {{ . }}{{ end }}){{ else }} ({{ . }}{{ with $im.licence }}, {{ . }}{{ end }}){{ end }}{{ else }}{{ with $im.licence }} ({{ . }}){{ end }}{{ end }}{{ end }}</p>{{ end }}

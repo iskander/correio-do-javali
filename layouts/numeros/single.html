@@ -2,44 +2,76 @@
 {{ $n := .Params.numero }}
 {{ $d := index hugo.Data.numeros (printf "%d" $n) }}
 {{ $suivant := index hugo.Data.numeros (printf "%d" (add $n 1)) }}
-{{ $mois := index $d.meta (printf "mois_%s" site.Language.Lang) | default $d.meta.mois_fr }}
+{{ $lang := site.Language.Lang }}
+{{ $mois := index $d.meta (printf "mois_%s" $lang) | default $d.meta.mois_fr }}
+{{ $jouer := index (hugo.Data.a_jouer | default dict) (printf "%d" $n) }}
+
+{{/* matériel numérique du numéro : vidéos citées et illustrations du journal */}}
+{{ $videos := slice }}{{ $illus := slice }}{{ $nbSources := 0 }}
+{{ range $d.articles }}
+  {{ $t := .titre }}
+  {{ range .sources }}{{ $nbSources = add $nbSources 1 }}
+    {{ if .video }}{{ $videos = $videos | append (dict "url" .url "titre" (.titre | default .media) "article" $t) }}{{ end }}
+  {{ end }}
+  {{ range .images }}{{ if .fichier }}{{ $illus = $illus | append (dict "fichier" .fichier "legende" .legende "article" $t "source" .source "licence" .licence) }}{{ end }}{{ end }}
+{{ end }}
 
 <div class="bandeau"><span>{{ $d.meta.mois_pt }}</span><span>nº{{ $n }} - {{ $mois }}</span></div>
 
-<section class="rubrique">
-  <h2 class="rub">{{ i18n "titre_sources" }}</h2>
-  {{ with i18n "note_langue" }}<p class="intro note">{{ . }}</p>{{ end }}
-  {{ $cur := "" }}
-  {{ range $d.articles }}
-    {{ if ne .rubrique $cur }}{{ $cur = .rubrique }}<h3 class="sous-rub">{{ i18n (printf "rub_%s" .rubrique) }}</h3>{{ end }}
-    <article class="src" lang="{{ .langue | default "fr" }}">
-      <h4>{{ .titre }} {{ partial "ia.html" .ia }}</h4>
-      {{ with .sources }}
-        <ul>{{ range . }}<li><a href="{{ . }}" rel="noopener nofollow">{{ replaceRE "^https?://(www\\.)?" "" . | truncate 80 }}</a></li>{{ end }}</ul>
-      {{ else }}<p class="vide" lang="{{ site.Language.Lang }}">{{ i18n "sans_source" }}</p>{{ end }}
-      {{ with .images }}
-        <p class="credits">{{ i18n "images" }} :
-        {{ range . }}{{ with .legende }}{{ . }} — {{ end }}{{ with .source }}{{ if hasPrefix . "http" }}<a href="{{ . }}" rel="noopener nofollow">{{ i18n "source" }}</a>{{ else }}{{ . }}{{ end }}{{ end }}{{ with .licence }}, {{ . }}{{ end }}. {{ end }}</p>
-      {{ end }}
-    </article>
-  {{ end }}
-</section>
+<nav class="sommaire" aria-label="{{ i18n "dans_ce_numero" }}">
+  {{ if $jouer }}<a href="#jouer">{{ i18n "som_jouer" }}</a>{{ end }}
+  {{ if $illus }}<a href="#illustrations">{{ i18n "som_illustrations" }} <span>{{ len $illus }}</span></a>{{ end }}
+  {{ if $videos }}<a href="#videos">{{ i18n "som_videos" }} <span>{{ len $videos }}</span></a>{{ end }}
+  {{ if $d.jeux }}<a href="#solutions">{{ i18n "som_solutions" }}</a>{{ end }}
+  <a href="#sources">{{ i18n "som_sources" }} <span>{{ $nbSources }}</span></a>
+</nav>
 
-{{ with index (hugo.Data.a_jouer | default dict) (printf "%d" $n) }}
-<section class="rubrique">
-  <h2 class="rub">{{ i18n "titre_a_jouer" }}</h2>
+{{ if or $jouer $illus $videos }}
+<section class="rubrique decouvrir">
+  <h2 class="rub">{{ i18n "titre_decouvrir" }}</h2>
+
+  {{ with $jouer }}
+  <div class="cartes" id="jouer">
   {{ range . }}
-  <article class="src a-jouer">
-    <h4>{{ .titre }}</h4>
-    <p>{{ index . (printf "texte_%s" site.Language.Lang) | default .texte_fr }}</p>
-    <p><a class="bouton" href="{{ .url | absURL }}">{{ i18n "jouer" }} →</a></p>
-  </article>
+    <a class="carte" href="{{ .url | absURL }}">
+      {{ with .image }}<img src="{{ . | absURL }}" alt="" loading="lazy">{{ end }}
+      <span class="carte-corps">
+        <span class="etiquette">{{ i18n "etiquette_jeu" }}</span>
+        <strong>{{ .titre }}</strong>
+        <span class="carte-texte">{{ index . (printf "texte_%s" $lang) | default .texte_fr }}</span>
+        <span class="bouton">{{ i18n "jouer" }} →</span>
+      </span>
+    </a>
+  {{ end }}
+  </div>
+  {{ end }}
+
+  {{ with $illus }}
+  <h3 class="sous-rub" id="illustrations">{{ i18n "titre_illustrations" }}</h3>
+  <div class="galerie">
+  {{ range . }}
+    <figure>
+      <a href="{{ .fichier | absURL }}"><img src="{{ .fichier | absURL }}" alt="{{ .legende }}" loading="lazy"></a>
+      <figcaption>{{ .legende }}<span class="de">{{ .article }}</span></figcaption>
+    </figure>
+  {{ end }}
+  </div>
+  <p class="credits">{{ i18n "licence_illustrations" }}</p>
+  {{ end }}
+
+  {{ with $videos }}
+  <h3 class="sous-rub" id="videos">{{ i18n "titre_videos" }}</h3>
+  <ul class="videos">
+  {{ range . }}
+    <li><a href="{{ .url }}" rel="noopener nofollow">{{ .titre }}</a><span class="de">{{ .article }}</span></li>
+  {{ end }}
+  </ul>
   {{ end }}
 </section>
 {{ end }}
 
 {{ with $d.jeux }}
-<section class="rubrique">
+<section class="rubrique" id="solutions">
   <h2 class="rub">{{ i18n "titre_jeux" }}</h2>
   <div class="jeux">
   {{ with .sudoku }}
@@ -77,4 +109,49 @@
   </div>
 </section>
 {{ end }}
+
+<section class="rubrique" id="sources">
+  <h2 class="rub">{{ i18n "titre_sources" }}</h2>
+  <p class="intro note">{{ i18n "intro_sources" }}
+    <button type="button" class="lien" id="tout" data-ouvrir="{{ i18n "tout_ouvrir" }}" data-fermer="{{ i18n "tout_fermer" }}" hidden>{{ i18n "tout_ouvrir" }}</button></p>
+  {{ $cur := "" }}
+  {{ range $d.articles }}
+    {{ if ne .rubrique $cur }}{{ $cur = .rubrique }}<h3 class="sous-rub">{{ i18n (printf "rub_%s" .rubrique) }}</h3>{{ end }}
+    {{ $credits := where (.images | default slice) "source" "!=" nil }}
+    {{ if .sources }}
+    <details class="src" lang="{{ .langue | default "fr" }}">
+      <summary><span class="titre">{{ .titre }}</span> {{ partial "ia.html" .ia }}
+        <span class="nb" lang="{{ $lang }}">{{ len .sources }} {{ if eq (len .sources) 1 }}{{ i18n "une_source" }}{{ else }}{{ i18n "n_sources" }}{{ end }}</span></summary>
+      <ul lang="{{ $lang }}">
+      {{ range .sources }}
+        <li><a href="{{ .url }}" rel="noopener nofollow">{{ .titre | default .media }}</a>
+          {{ $m := cond (isset . "titre") .media "" }}<span class="media">{{ $m }}{{ with .date }}{{ if $m }} · {{ end }}{{ (time.AsTime .).Format "02/01/2006" }}{{ end }}</span>
+          {{ with .note }}<span class="appuie">{{ . }}</span>{{ end }}</li>
+      {{ end }}
+      </ul>
+      {{ partial "credits.html" .images }}
+    </details>
+    {{ else }}
+    <div class="src sans" lang="{{ .langue | default "fr" }}">
+      <span class="titre">{{ .titre }}</span> {{ partial "ia.html" .ia }}
+      <span class="nb" lang="{{ $lang }}">{{ i18n "sans_source_court" }}</span>
+      {{ partial "credits.html" .images }}
+    </div>
+    {{ end }}
+  {{ end }}
+</section>
+
+<script>
+  // « Tout ouvrir » : sans JavaScript, chaque article s'ouvre quand même d'un clic
+  (function () {
+    const b = document.getElementById("tout"), d = document.querySelectorAll("details.src");
+    if (!b || !d.length) return;
+    b.hidden = false;
+    b.addEventListener("click", function () {
+      const ouvrir = b.textContent === b.dataset.ouvrir;
+      d.forEach(function (x) { x.open = ouvrir; });
+      b.textContent = ouvrir ? b.dataset.fermer : b.dataset.ouvrir;
+    });
+  })();
+</script>
 {{ end }}

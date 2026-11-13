@@ -2,8 +2,9 @@
  {
   "titre": "La connexion avec la nature",
   "url": "jeux/connexion-nature/",
-  "texte_fr": "Le jeu vidéo créé pendant le stage d'IA (article « Stage IA : chacun son projet ») : une jeune fille part à pied de Strasbourg vers Compostelle, 2 000 kilomètres et seize étapes, à apprendre les plantes, sauter les ruisseaux et camper avec ses compagnons de route. En français, portugais, anglais, espagnol et néerlandais ; la partie est gardée dans le navigateur.",
-  "texte_pt": "O videojogo criado durante o estágio de IA (artigo «Stage IA : chacun son projet»): uma rapariga parte a pé de Estrasburgo para Compostela, 2000 quilómetros e dezasseis etapas, a aprender as plantas, saltar ribeiros e acampar com os companheiros de caminho. Em francês, português, inglês, espanhol e neerlandês; o jogo fica guardado no navegador.",
-  "texte_en": "The video game made during the AI workshop: a girl walks from Strasbourg to Santiago de Compostela, 2,000 kilometres in sixteen stages, learning plants, jumping streams and camping with her fellow walkers. In French, Portuguese, English, Spanish and Dutch; progress is saved in your browser."
+  "image": "img/jeux/connexion-nature.png",
+  "texte_fr": "Le jeu créé pendant le stage d'IA : 2 000 km à pied de Strasbourg à Compostelle, en seize étapes. Cinq langues, partie gardée dans le navigateur.",
+  "texte_pt": "O jogo criado durante o estágio de IA: 2000 km a pé de Estrasburgo a Compostela, em dezasseis etapas. Cinco línguas, jogo guardado no navegador.",
+  "texte_en": "The game made during the AI workshop: a 2,000 km walk from Strasbourg to Santiago, in sixteen stages. Five languages, progress saved in your browser."
  }
 ]
